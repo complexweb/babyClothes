@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="assets/css-min/style.min.css">
+  
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__top header-top">
+    <div class="container">
+      <div class="header-top__inner" id="header-top-inner">
+        <address class="header-top__address header-address" id="header-address">
+          <div class="header-address__item header-address__item-address">
+            <span class="">г. Москва, Электролитный проезд 3Б стр 6</span>
+          </div>
+          <a href="tel:+7 916 361-30-00" class="header-address__item header-address__item-phone"
+            title="Позвонить +7 916 361-30-00" aria-label="Связаться с нами по номеру +7 916 361-30-00">
+            <svg>
+              <use xlink:href="assets/img/icons/icons.svg#phone"></use>
+            </svg>
+            <span>+7 916 361-30-00</span>
+          </a>
+        </address>
+        <nav class="header-top__nav header-nav" id="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item header-nav__item-drop" id="header-nav-item-drop">
+              <div class="header-nav__item-text" id="header-catalog">
+                <div class="header-nav__item-text-burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span>Каталог</span>
+                <svg>
+                  <use xlink:href="assets/img/icons/icons.svg#triangle"></use>
+                </svg>
+              </div>
+              <div class="header-nav__drop header-nav-drop">
+                <div class="container">
+                  <div class="header-nav-drop__inner" id="header-nav-drop-inner">
+                    <ul class="header-nav-drop__list" id="header-catalog-drop">
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="clothes">Одежда</a>
+                        <ul class="nav-drop__list" data-catalog-drop="clothes">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Изделия из муслина</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Боди</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Песочники</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Нательные комбинезоны (слипы)</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны из футера</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны вязаные</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Демисезонные комбинезоны</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны-трансформеры</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Головные уборы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Носочки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Нагрудники</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="napkins">Пеленки</a>
+                        <ul class="nav-drop__list" data-catalog-drop="napkins">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленальные коконы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из фланели</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из муслина</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из интерлока</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="envelopes-and-blankets">Конверты и
+                          пледы</a>
+                        <ul class="nav-drop__list" data-catalog-drop="envelopes-and-blankets">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Конверты в коляску</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пледы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Конверты на выписку</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="accessories">Аксессуары</a>
+                        <ul class="nav-drop__list" data-catalog-drop="accessories">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Сумки-органайзеры</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Муфты-варежки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Грызунки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Альбомы для фотографий</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Держатели для соски/грузунка</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item">
+                        <a href="#" class="nav-drop__link">Готовые подборки</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link _active">Главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Как купить</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Доставка</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">О компании</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Мы в instagram</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Акции</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header-bottom">
+    <div class="container">
+      <div class="header-bottom__inner">
+        <button type="button" class="header-bottom__mobile-btn burger-btn" aria-label="Главное меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="header-bottom__logo logo" id="header-logo">
+          <img src="assets/img/logo/logo.png" alt="Logo">
+        </a>
+        <form class="header-bottom__search main-search" id="main-search" action="#" name="search">
+          <div class="main-search__block">
+            <div class="main-search__input-block">
+              <input type="text" class="main-search__input" placeholder="Начните писать">
+              <svg class="main-search__input-icon">
+                <use xlink:href="assets/img/icons/icons.svg#search"></use>
+              </svg>
+              <div class="main-search-suggest">
+                <ul class="main-search-suggest__list">
+                  <li class="main-search-suggest__item">
+                    Детские пеленки
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Конверты на выписку для мальчика
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Соски
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Грызунки
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="submit" class="main-search__submit" aria-label="Найти">
+              <span>
+                Найти
+              </span>
+              <svg class="main-search__submit-icon">
+                <use xlink:href="assets/img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <button type="button" class="header-bottom__search-mobile-btn search-mobile-btn"
+          aria-label="Открыть поиск по сайту">
+          <svg class="search-mobile-btn__icon">
+            <use xlink:href="assets/img/icons/icons.svg#search"></use>
+          </svg>
+        </button>
+        <ul class="header-bottom__actions user-actions">
+          <li class="user-actions__item user-actions__item--favorites" id="user-actions-item-favorite">
+            <a href="#" class="user-actions__link" id="header-favorite">
+              <svg class="user-actions__link-icon user-actions__link-icon--heart">
+                <use xlink:href="assets/img/icons/icons.svg#heart"></use>
+              </svg>
+              <span class="user-actions__link-text">Избранное</span>
+            </a>
+          </li>
+          <li class="user-actions__item" id="user-actions-item-cart">
+            <a href="#" class="user-actions__link" id="header-cart">
+              <svg class="user-actions__link-icon user-actions__link-icon--basket">
+                <use xlink:href="assets/img/icons/icons.svg#basket"></use>
+              </svg>
+              <span class="user-actions__link-text">Корзина</span>
+            </a>
+          </li>
+          <li class="user-actions__item" id="user-actions-item-user">
+            <button type="button" class="user-actions__link js-open-popup-btn" id="header-user"  data-popup-name="enter">
+              <svg class="user-actions__link-icon user-actions__link-icon--user">
+                <use xlink:href="assets/img/icons/icons.svg#user"></use>
+              </svg>
+              <span class="user-actions__link-text">Войти</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile-search mobile-search">
+    <div class="container">
+      <div class="mobile-search__inner" id="mobile-search">
+        <button type="button" class="mobile-search__close close-btn" aria-label="Закрыть поиск по сайту">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile-menu mobile-menu">
+    <div class="mobile-menu__body">
+      <div class="container">
+        <div class="mobile-menu__inner" id="mobile-menu">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__catalog-menu catalog-menu">
+    <div class="catalog-menu__body">
+      <div class="catalog-menu__header">
+        <div class="container">
+          <div class="catalog-menu__header-inner">
+            <button type="button" class="catalog-menu__close close-btn close-btn--white">
+              <span></span>
+              <span></span>
+            </button>
+            <div class="catalog-menu__header-name">
+              Каталог
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-menu__header-body" id="catalog-menu">
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-footer">
+  <div class="container">
+    <div class="mobile-footer__inner">
+      <ul class="mobile-footer__list">
+        <li class="mobile-footer__list-item" id="mobile-footer-catalog" role="button" aria-label="Каталог"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-favorite" role="button" aria-label="Избранное"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-cart" role="button" aria-label="Корзина"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-user" role="button" aria-label="Войти"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <main class="main">
+    <div class="page-info page-info__account-page">
+      <div class="page-info__title-block page-title-block">
+        <div class="container">
+          <div class="page-title-block__inner">
+            <h1 class="page-title-block__title main-title">
+              Личный кабинет
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-info__breadcrumbs breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                Личный кабинет
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="account-page section--margin">
+      <div class="container">
+        <div class="account-page__grid">
+          <div class="account-page__item js-open-popup-btn" data-popup-name="current-orders" role="button">
+            <div class="account-page__img-block">
+              <img src="assets/img/content/account/bg-1.webp" alt="">
+            </div>
+            <div class="account-page__info">
+              <div class="account-page__text">
+                Текущие <br>заказы
+              </div>
+            </div>
+          </div>
+          <div class="account-page__item js-open-popup-btn" data-popup-name="orders-history" role="button">
+            <div class="account-page__img-block">
+              <img src="assets/img/content/account/bg-2.webp" alt="">
+            </div>
+            <div class="account-page__info">
+              <div class="account-page__text">
+                История <br>заказов
+              </div>
+            </div>
+          </div>
+          <a href="#" class="account-page__item" role="button">
+            <div class="account-page__img-block">
+              <img src="assets/img/content/account/bg-3.webp" alt="">
+            </div>
+            <div class="account-page__info">
+              <div class="account-page__text">
+                Личные <br>данные
+              </div>
+            </div>
+          </a>
+          <div class="account-page__item js-open-popup-btn" data-popup-name="profile" role="button">
+            <div class="account-page__img-block">
+              <img src="assets/img/content/account/bg-4.webp" alt="">
+            </div>
+            <div class="account-page__info">
+              <div class="account-page__text">
+                Сменить <br>пароль
+              </div>
+            </div>
+          </div>
+          <div class="account-page__item js-open-popup-btn" role="button" data-popup-name="order-profile">
+            <div class="account-page__img-block">
+              <img src="assets/img/content/account/bg-5.webp" alt="">
+            </div>
+            <div class="account-page__info">
+              <div class="account-page__text">
+                Профиль <br>заказов
+              </div>
+            </div>
+          </div>
+          <div class="account-page__item js-open-popup-btn" role="button" data-popup-name="subscriptions">
+            <div class="account-page__img-block">
+              <img src="assets/img/content/account/bg-6.webp" alt="">
+            </div>
+            <div class="account-page__info">
+              <div class="account-page__text">
+                Подписки
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__column footer__column--tablet">
+        <ul class="footer__navigation">
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link _active">
+              Главная
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Доставка
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              О компании
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Мы в instagram
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Акции
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Новости
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Отзывы
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Контакты
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Лицензии
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Оплата и возврат
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Условия доставки
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__logo">
+          <img src="assets/img/logo/logo.png" alt="logo">
+        </a>
+        <span class="footer__copy">
+          2022 © «LalaSTORE»
+        </span>
+        <ul class="footer__pay">
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/mir.svg" alt="Мир" class="footer__pay-img footer__pay-img--mir">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/paykeeper.svg" alt="PayKeeper" class="footer__pay-img footer__pay-img--paykeeper">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/mastercard.svg" alt="MasterCard" class="footer__pay-img footer__pay-img--mastercard">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/visa.svg" alt="Visa" class="footer__pay-img footer__pay-img--visa">
+          </li>
+        </ul>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__column footer__column--desktop">
+        <address class="footer__address">
+          <ul class="footer__address-list">
+            <li class="footer__address-item footer__address-item--map-marker">
+              Адрес шоурума:, г. Москва, Электролитный проезд 3Б стр 6
+            </li>
+            <li class="footer__address-item">
+              <a href="mailto:info@lalastore.ru" class="footer__address-link footer__address-link--mail">info@lalastore.ru</a>
+            </li>
+            <li class="footer__address-item">
+              <a href="tel:+79163613000" class="footer__address-link footer__address-link--tel">+7 916 361-30-00</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup js-popup registration" data-popup-name="registration">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="registration__body">
+          <h2 class="registration__title main-title">
+            Регистрация
+          </h2>
+          <p class="registration__descr">
+            Зарегистрируйтесь, чтобы использовать все возможности личного кабинета: отслеживание заказов, настройку
+            подписки, связи с социальными сетями и другие. Мы никогда и ни при каких условиях не разглашаем личные
+            данные клиентов. Контактная информация будет использована только для оформления заказов и более удобной
+            работы с сайтом.
+          </p>
+          <div class="registration__body-inner">
+            <form action="#" class="registration__form registration-form" name="registration" id="registration">
+              <div class="registration-form__input-block input-block">
+                <label class="input-block__label" for="registration__name">Фамилия Имя Отчество *</label>
+                <input class="input-block__input input" type="text" id="registration__name" name="name" placeholder="Иванов Иван Иванович" autocomplete="on" required>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-mail">E-mail *</label>
+                  <input class="input-block__input input" type="email" id="registration-mail" name="mail" placeholder="ivanov@gmail.com" autocomplete="on" required>
+                </div>
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-phone">Телефон</label>
+                  <input class="input-block__input input" type="tel" id="registration-phone" name="phone" placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on">
+                </div>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-pass">Пароль *</label>
+                  <input class="input-block__input input" type="password" id="registration-pass" name="pass" placeholder="******" required>
+                </div>
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-pass-confirm">Подтверждение пароля *</label>
+                  <input class="input-block__input input" type="password" id="registration-pass-confirm" name="pass-confirm" placeholder="******" required>
+                </div>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block registration-form__input-captcha input-block">
+                  <label class="input-block__label" for="registration-captcha">Введите код *</label>
+                  <input class="input-block__input input" type="text" id="registration-captcha" name="captcha" placeholder="XXXXXX" required>
+                </div>
+                <div class="registration-form__captcha">
+                  капча
+                </div>
+              </div>
+              <div class="registration-form__btns">
+                <button type="submit" class="registration-form__submit main-btn">зарегистрироваться</button>
+                <button type="button" class="registration-form__btn js-open-popup-btn" data-popup-name="enter">Есть аккаунт?</button>
+                <label class="registration-form__input checkbox">
+                  <input class="checkbox__input" type="checkbox" name="agreement" required>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup js-popup enter" data-popup-name="enter">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="enter__body">
+          <h2 class="enter__title main-title">
+            Вход
+          </h2>
+          <div class="enter__body-inner">
+            <form action="#" class="enter__form enter-form" name="enter" id="enter">
+              <div class="enter-form__row">
+                <div class="enter-form__input-block input-block">
+                  <label class="input-block__label" for="enter-login">Логин *</label>
+                  <input class="input-block__input input" type="email" id="enter-login" name="login"
+                    placeholder="ivanov@gmail.com" autocomplete="on" required>
+                </div>
+                <div class="enter-form__input-block input-block">
+                  <label class="input-block__label" for="enter-pass">Пароль *</label>
+                  <input class="input-block__input input" type="password" id="enter-pass" name="pass"
+                    placeholder="*****" required>
+                </div>
+              </div>
+              <label class="enter-form__input checkbox">
+                <input class="checkbox__input" type="checkbox" name="agreement" required>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+              </label>
+              <div class="enter-form__btns">
+                <button type="submit" class="enter-form__submit main-btn">Войти</button>
+                <button type="button" class="enter-form__btn js-open-popup-btn" data-popup-name="registration">Нет аккаунта?</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <div class="popup js-popup subscriptions" data-popup-name="subscriptions">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="subscriptions__body">
+          <h2 class="subscriptions__title main-title">
+            Ваши подписки
+          </h2>
+          <p class="subscriptions__descr">
+            Адрес подписки будет принадлежать пользователю:
+          </p>
+          <form action="#" class="subscriptions__form subscriptions-form" name="subscriptions" id="subscriptions">
+
+            <div class="subscriptions-form__row">
+              <div class="subscriptions-form__input-block input-block">
+                <label class="input-block__label" for="subscriptions__name">Ваш имя</label>
+                <input class="input-block__input input" type="text" id="subscriptions__name" name="name"
+                  placeholder="Иванов Иван Иванович" autocomplete="on" required>
+              </div>
+              <div class="subscriptions-form__input-block input-block">
+                <label class="input-block__label" for="subscriptions__mail">Почта</label>
+                <input class="input-block__input input" type="email" id="subscriptions__mail" name="mail"
+                  placeholder="ivanov@gmail.com" autocomplete="on" required>
+              </div>
+            </div>
+            <div class="subscriptions__form-descr">
+              После добавления или изменения адреса подписки вам будет выслан код подтверждения. Подписка будет не
+              активной до ввода кода подтверждения.
+            </div>
+            <div class="subscriptions__chacks-row">
+              <fieldset class="subscriptions__chacks-fieldset">
+                <legend>Предпочтительный формат</legend>
+                <label class="subscriptions-form__input checkbox">
+                  <input class="checkbox__input" type="checkbox" name="text" checked>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__name">Текст</span>
+                </label>
+                <label class="subscriptions-form__input checkbox">
+                  <input class="checkbox__input" type="checkbox" name="html">
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__name">HTML</span>
+                </label>
+              </fieldset>
+              <fieldset class="subscriptions__chacks-fieldset">
+                <legend>Рубрики подписки</legend>
+                <label class="subscriptions-form__input checkbox">
+                  <input class="checkbox__input" type="checkbox" name="news" checked>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__name">Новости магазина</span>
+                </label>
+              </fieldset>
+            </div>
+            <div class="subscriptions__btns">
+              <button type="button" class="subscriptions__submit main-btn">подписаться</button>
+              <button type="button" class="subscriptions__btn link-btn">Сменить пользователя</button>
+              <label class="subscriptions-form__input checkbox">
+                <input class="checkbox__input" type="checkbox" name="agreement" required>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup js-popup profile" data-popup-name="profile">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="profile__body">
+          <h2 class="profile__title main-title">
+            Профиль пользователя
+          </h2>
+          <p class="profile__descr">
+            Длина пароля не менее 6 символов
+          </p>
+          <form action="#" class="profile__form profile-form" name="profile" id="profile">
+            <div class="profile-form__input-block input-block">
+              <label class="input-block__label" for="profile__name">Фамилия Имя Отчество*</label>
+              <input class="input-block__input input" type="text" id="profile__name" name="name"
+                placeholder="Иванов Иван Иванович" autocomplete="on" required>
+            </div>
+            <div class="profile-form__input-block input-block">
+              <label class="input-block__label" for="profile__mail">E-mail*</label>
+              <input class="input-block__input input" type="email" id="profile__mail" name="mail"
+                placeholder="ivanov@gmail.com" autocomplete="on" required>
+            </div>
+            <div class="profile-form__input-block input-block">
+              <label class="input-block__label" for="profile__phone">Телефон*</label>
+              <input class="input-block__input input" type="tel" id="profile__phone" name="phone"
+                placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on" required>
+            </div>
+            <button type="submit" class="profile-form__submit main-btn">сохранить изменения</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup js-popup order-profile" data-popup-name="order-profile">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="order-profile__body">
+          <h2 class="order-profile__title main-title">
+            Профили пользователей
+          </h2>
+          <div class="order-profile__body-block profile-block js-spoller" data-min-width="800">
+            <h3 class="profile-block__title js-spoller-btn" data-spoller-name="profile-1" data-active>
+              Профиль: 1
+            </h3>
+            <div class="profile-block__body js-spoller-area" data-spoller-name="profile-1">
+              <div class="profile-block__body-inner js-spoller-area-inner">
+                <div class="profile-block__body-header">
+                  <div class="profile-block__header-item">
+                    Код:
+                  </div>
+                  <div class="profile-block__header-item">
+                    Дата обновления:
+                  </div>
+                  <div class="profile-block__header-item">
+                    Название:
+                  </div>
+                  <div class="profile-block__header-item">
+                    Тип плательщика:
+                  </div>
+                  <div class="profile-block__header-item">
+                    Действия:
+                  </div>
+                </div>
+                <div class="profile-block__item profile-item">
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Код:</span>
+                    <span class="profile-item__column-text">9</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Дата обновления:</span>
+                    <span class="profile-item__column-text">18/03/2022 16:48:15</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Название:</span>
+                    <span class="profile-item__column-text">А С И</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Тип плательщика:</span>
+                    <span class="profile-item__column-text">Физическое лицо</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <div class="profile-item__btns">
+                      <button type="button" class="profile-item__column-del">
+                        <span>Удалить</span>
+                      </button>
+                      <button type="button" class="profile-item__column-change js-open-popup-btn" data-popup-name="edit-order">Изменить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-block__item profile-item">
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Код:</span>
+                    <span class="profile-item__column-text">9</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Дата обновления:</span>
+                    <span class="profile-item__column-text">18/03/2022 16:48:15</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Название:</span>
+                    <span class="profile-item__column-text">А С И</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Тип плательщика:</span>
+                    <span class="profile-item__column-text">Физическое лицо</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <div class="profile-item__btns">
+                      <button type="button" class="profile-item__column-del">
+                        <span>Удалить</span>
+                      </button>
+                      <button type="button" class="profile-item__column-change js-open-popup-btn" data-popup-name="edit-order">Изменить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-block__item profile-item">
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Код:</span>
+                    <span class="profile-item__column-text">9</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Дата обновления:</span>
+                    <span class="profile-item__column-text">18/03/2022 16:48:15</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Название:</span>
+                    <span class="profile-item__column-text">А С И</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Тип плательщика:</span>
+                    <span class="profile-item__column-text">Физическое лицо</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <div class="profile-item__btns">
+                      <button type="button" class="profile-item__column-del">
+                        <span>Удалить</span>
+                      </button>
+                      <button type="button" class="profile-item__column-change js-open-popup-btn" data-popup-name="edit-order">Изменить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile-block__item profile-item">
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Код:</span>
+                    <span class="profile-item__column-text">9</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Дата обновления:</span>
+                    <span class="profile-item__column-text">18/03/2022 16:48:15</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Название:</span>
+                    <span class="profile-item__column-text">А С И</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <span class="profile-item__column-name">Тип плательщика:</span>
+                    <span class="profile-item__column-text">Физическое лицо</span>
+                  </div>
+                  <div class="profile-item__column">
+                    <div class="profile-item__btns">
+                      <button type="button" class="profile-item__column-del">
+                        <span>Удалить</span>
+                      </button>
+                      <button type="button" class="profile-item__column-change js-open-popup-btn" data-popup-name="edit-order">Изменить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup js-popup user-orders current-orders" data-popup-name="user-orders">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="user-orders__body">
+          <h2 class="user-orders__title main-title">
+            Текущие заказы
+          </h2>
+          <div class="user-orders__tabs tabs">
+            <div class="user-orders__tabs-btns">
+              <button type="button" class="user-orders__tabs-btn tabs__btn _active"
+                data-tab-name="current-order">Текущие
+                заказы</button>
+              <button type="button" class="user-orders__tabs-btn tabs__btn" data-tab-name="canceled-order">Отмененные
+                заказы</button>
+            </div>
+            <div class="user-orders__tabs-wrapper tabs__items">
+              <div class="user-orders__tabs-body js-spoller tabs__item _active" data-min-width="1000" data-tab-name="current-order">
+                <div class="user-orders__item">
+                  <h3 class="user-orders__item-title js-spoller-btn" data-spoller-name="current-order-1" data-active>
+                    Заказы в статусе “Оплачен, формируется к отправке”
+                  </h3>
+                  <div class="user-orders__block js-spoller-area" data-spoller-name="current-order-1">
+                    <div class="user-orders__block-inner js-spoller-area-inner">
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-orders__item">
+                  <h3 class="user-orders__item-title js-spoller-btn" data-spoller-name="current-order-2" data-active>
+                    Заказы в статусе “Отправлен”
+                  </h3>
+                  <div class="user-orders__block js-spoller-area" data-spoller-name="current-order-2">
+                    <div class="user-orders__block-inner js-spoller-area-inner">
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="user-orders__tabs-body js-spoller tabs__item" data-min-width="1000" data-tab-name="canceled-order">
+                <div class="user-orders__item">
+                  <h3 class="user-orders__item-title js-spoller-btn" data-spoller-name="current-order-4" data-active>
+                    Заказы в статусе “Отменен”
+                  </h3>
+                  <div class="user-orders__block js-spoller-area" data-spoller-name="current-order-4">
+                    <div class="user-orders__block-inner js-spoller-area-inner">
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup js-popup user-orders orders-history" data-popup-name="user-orders">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="user-orders__body">
+          <h2 class="user-orders__title main-title">
+            история заказов
+          </h2>
+          <div class="user-orders__tabs tabs">
+            <div class="user-orders__tabs-btns">
+              <button type="button" class="user-orders__tabs-btn tabs__btn _active"
+                data-tab-name="history-order">Выполненные
+                заказы</button>
+              <button type="button" class="user-orders__tabs-btn tabs__btn" data-tab-name="canceled-order">Отмененные
+                заказы</button>
+            </div>
+            <div class="user-orders__tabs-wrapper tabs__items">
+              <div class="user-orders__tabs-body js-spoller tabs__item _active" data-min-width="1000" data-tab-name="history-order">
+                <div class="user-orders__item">
+                  <h3 class="user-orders__item-title js-spoller-btn" data-spoller-name="history-order-1" data-active>
+                    Заказы в статусе “Выполнен”
+                  </h3>
+                  <div class="user-orders__block js-spoller-area" data-spoller-name="history-order-1">
+                    <div class="user-orders__block-inner js-spoller-area-inner">
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-orders__item">
+                  <h3 class="user-orders__item-title js-spoller-btn" data-spoller-name="history-order-2" data-active>
+                    Заказы в статусе “Выполнен, закрыт”
+                  </h3>
+                  <div class="user-orders__block js-spoller-area" data-spoller-name="history-order-2">
+                    <div class="user-orders__block-inner js-spoller-area-inner">
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="user-orders__tabs-body js-spoller tabs__item" data-min-width="1000" data-tab-name="canceled-order">
+                <div class="user-orders__item">
+                  <h3 class="user-orders__item-title js-spoller-btn" data-spoller-name="history-order-4" data-active>
+                    Заказы в статусе “Отменен”
+                  </h3>
+                  <div class="user-orders__block js-spoller-area" data-spoller-name="history-order-4">
+                    <div class="user-orders__block-inner js-spoller-area-inner">
+                      <div class="user-orders__order">
+                        <div class="user-orders__info">
+                          <div class="user-orders__text">
+                            Заказ #: 4844 от 31.01.2022 16:44:41, 2 товара на сумму 2 728,75р
+                          </div>
+                          <div class="user-orders__date">
+                            Заказ выполнен 31.01.2022
+                          </div>
+                        </div>
+                        <div class="user-orders__btns">
+                          <button type="button" class="user-orders__btn main-btn">подробнее о заказе</button>
+                          <button type="button" class="user-orders__btn main-btn user-orders__btn--dark">повторить
+                            заказ</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="popup js-popup edit-order">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="order__body">
+          <h2 class="order__title main-title">
+            Редактировать
+          </h2>
+          <div class="order__body-inner">
+            <form action="#" name="order-form" id="order-form" class="order__form js-spoller" data-min-width="1000">
+              <div class="order__form-block">
+                <fieldset class="order__form-fieldset">
+                  <legend class="order__legend section-title js-spoller-btn" data-spoller-name="edit-name" data-active>
+                    <svg>
+                      <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                    </svg>
+                    <span>Профиль: 1</span>
+                  </legend>
+                  <div class="order__form-area js-spoller-area" data-spoller-name="edit-name">
+                    <div class="order__form-area-inner js-spoller-area-inner">
+                      <div class="order__form-info">
+                        Тип плательщика: Физическое лицо
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="edit-name">Ф.И.О*</label>
+                        <input class="input-block__input input" type="text" id="edit-name" name="name" autocomplete="on"
+                          required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="edit-mail">E-Mail *</label>
+                        <input class="input-block__input input" type="email" id="edit-mail" name="mail"
+                          autocomplete="on" required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="edit-phone">Телефон *</label>
+                        <input class="input-block__input input" type="tel" id="edit-phone" name="phone"
+                          autocomplete="on" required>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="order__form-block">
+                <fieldset class="order__form-fieldset">
+                  <legend class="order__legend section-title js-spoller-btn" data-spoller-name="edit-address"
+                    data-active>
+                    <svg>
+                      <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                    </svg>
+                    <span>Данные для доставки</span>
+                  </legend>
+                  <div class="order__form-area js-spoller-area" data-spoller-name="edit-address">
+                    <div class="order__form-area-inner js-spoller-area-inner">
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="edit-index">Индекс *</label>
+                        <input class="input-block__input input" type="number" id="edit-index" name="index"
+                          autocomplete="on" required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="edit-city">Город*</label>
+                        <input class="input-block__input input" type="text" id="edit-city" name="city" autocomplete="on"
+                          required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="edit-delivery-address">Адрес доставки *</label>
+                        <input class="input-block__input input" type="text" id="edit-delivery-address"
+                          name="delivery-address" autocomplete="on" required>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="order__form-block">
+                <fieldset class="order__form-fieldset">
+                  <div class="order__form-area order__form-area--no-spoller">
+                    <div class="order__form-area-inner">
+                      <button type="submit" class="order__submit main-btn">Сохранить</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <script src="assets/js-min/main.min.js"></script>
+</body>
+
+</html>

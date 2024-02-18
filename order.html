@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Товары в заказе</title>
+  <link rel="stylesheet" href="assets/css-min/style.min.css">
+  
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__top header-top">
+    <div class="container">
+      <div class="header-top__inner" id="header-top-inner">
+        <address class="header-top__address header-address" id="header-address">
+          <div class="header-address__item header-address__item-address">
+            <span class="">г. Москва, Электролитный проезд 3Б стр 6</span>
+          </div>
+          <a href="tel:+7 916 361-30-00" class="header-address__item header-address__item-phone"
+            title="Позвонить +7 916 361-30-00" aria-label="Связаться с нами по номеру +7 916 361-30-00">
+            <svg>
+              <use xlink:href="assets/img/icons/icons.svg#phone"></use>
+            </svg>
+            <span>+7 916 361-30-00</span>
+          </a>
+        </address>
+        <nav class="header-top__nav header-nav" id="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item header-nav__item-drop" id="header-nav-item-drop">
+              <div class="header-nav__item-text" id="header-catalog">
+                <div class="header-nav__item-text-burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span>Каталог</span>
+                <svg>
+                  <use xlink:href="assets/img/icons/icons.svg#triangle"></use>
+                </svg>
+              </div>
+              <div class="header-nav__drop header-nav-drop">
+                <div class="container">
+                  <div class="header-nav-drop__inner" id="header-nav-drop-inner">
+                    <ul class="header-nav-drop__list" id="header-catalog-drop">
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="clothes">Одежда</a>
+                        <ul class="nav-drop__list" data-catalog-drop="clothes">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Изделия из муслина</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Боди</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Песочники</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Нательные комбинезоны (слипы)</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны из футера</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны вязаные</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Демисезонные комбинезоны</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны-трансформеры</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Головные уборы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Носочки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Нагрудники</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="napkins">Пеленки</a>
+                        <ul class="nav-drop__list" data-catalog-drop="napkins">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленальные коконы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из фланели</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из муслина</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из интерлока</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="envelopes-and-blankets">Конверты и
+                          пледы</a>
+                        <ul class="nav-drop__list" data-catalog-drop="envelopes-and-blankets">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Конверты в коляску</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пледы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Конверты на выписку</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="accessories">Аксессуары</a>
+                        <ul class="nav-drop__list" data-catalog-drop="accessories">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Сумки-органайзеры</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Муфты-варежки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Грызунки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Альбомы для фотографий</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Держатели для соски/грузунка</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item">
+                        <a href="#" class="nav-drop__link">Готовые подборки</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link _active">Главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Как купить</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Доставка</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">О компании</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Мы в instagram</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Акции</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header-bottom">
+    <div class="container">
+      <div class="header-bottom__inner">
+        <button type="button" class="header-bottom__mobile-btn burger-btn" aria-label="Главное меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="header-bottom__logo logo" id="header-logo">
+          <img src="assets/img/logo/logo.png" alt="Logo">
+        </a>
+        <form class="header-bottom__search main-search" id="main-search" action="#" name="search">
+          <div class="main-search__block">
+            <div class="main-search__input-block">
+              <input type="text" class="main-search__input" placeholder="Начните писать">
+              <svg class="main-search__input-icon">
+                <use xlink:href="assets/img/icons/icons.svg#search"></use>
+              </svg>
+              <div class="main-search-suggest">
+                <ul class="main-search-suggest__list">
+                  <li class="main-search-suggest__item">
+                    Детские пеленки
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Конверты на выписку для мальчика
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Соски
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Грызунки
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="submit" class="main-search__submit" aria-label="Найти">
+              <span>
+                Найти
+              </span>
+              <svg class="main-search__submit-icon">
+                <use xlink:href="assets/img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <button type="button" class="header-bottom__search-mobile-btn search-mobile-btn"
+          aria-label="Открыть поиск по сайту">
+          <svg class="search-mobile-btn__icon">
+            <use xlink:href="assets/img/icons/icons.svg#search"></use>
+          </svg>
+        </button>
+        <ul class="header-bottom__actions user-actions">
+          <li class="user-actions__item user-actions__item--favorites" id="user-actions-item-favorite">
+            <a href="#" class="user-actions__link" id="header-favorite">
+              <svg class="user-actions__link-icon user-actions__link-icon--heart">
+                <use xlink:href="assets/img/icons/icons.svg#heart"></use>
+              </svg>
+              <span class="user-actions__link-text">Избранное</span>
+            </a>
+          </li>
+          <li class="user-actions__item" id="user-actions-item-cart">
+            <a href="#" class="user-actions__link" id="header-cart">
+              <svg class="user-actions__link-icon user-actions__link-icon--basket">
+                <use xlink:href="assets/img/icons/icons.svg#basket"></use>
+              </svg>
+              <span class="user-actions__link-text">Корзина</span>
+            </a>
+          </li>
+          <li class="user-actions__item" id="user-actions-item-user">
+            <button type="button" class="user-actions__link js-open-popup-btn" id="header-user"  data-popup-name="enter">
+              <svg class="user-actions__link-icon user-actions__link-icon--user">
+                <use xlink:href="assets/img/icons/icons.svg#user"></use>
+              </svg>
+              <span class="user-actions__link-text">Войти</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile-search mobile-search">
+    <div class="container">
+      <div class="mobile-search__inner" id="mobile-search">
+        <button type="button" class="mobile-search__close close-btn" aria-label="Закрыть поиск по сайту">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile-menu mobile-menu">
+    <div class="mobile-menu__body">
+      <div class="container">
+        <div class="mobile-menu__inner" id="mobile-menu">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__catalog-menu catalog-menu">
+    <div class="catalog-menu__body">
+      <div class="catalog-menu__header">
+        <div class="container">
+          <div class="catalog-menu__header-inner">
+            <button type="button" class="catalog-menu__close close-btn close-btn--white">
+              <span></span>
+              <span></span>
+            </button>
+            <div class="catalog-menu__header-name">
+              Каталог
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-menu__header-body" id="catalog-menu">
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-footer">
+  <div class="container">
+    <div class="mobile-footer__inner">
+      <ul class="mobile-footer__list">
+        <li class="mobile-footer__list-item" id="mobile-footer-catalog" role="button" aria-label="Каталог"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-favorite" role="button" aria-label="Избранное"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-cart" role="button" aria-label="Корзина"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-user" role="button" aria-label="Войти"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  <main class="main">
+    <div class="page-info page-info__order-page">
+      <div class="page-info__title-block page-title-block">
+        <div class="container">
+          <div class="page-title-block__inner">
+            <h1 class="page-title-block__title main-title">
+              Товары в заказе
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-info__breadcrumbs breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item">
+                <a href="#">
+                  Главная
+                </a>
+              </li>
+              <li class="breadcrumbs__item">
+                Оформление заказа
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="order-page double-page section--margin">
+      <div class="container">
+        <div class="double-page__inner">
+          <div class="double-page__label product-item__label--on-offer">В наличии</div>
+          <div class="double-page__body order-form" name="order-form" id="order-form">
+            <div class="double-page__main order-form__main">
+              <div class="order-form__item order-item">
+                <a href="#" class="order-item__item order-item__img-block" aria-label="Страница товара">
+                  <img src="assets/img/content/temp/cart/item.webp" alt="">
+                </a>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Наименование:</div>
+                  <a href="#" class="order-item__item-info">Боди без рукавов "ФРУК-ТИК", розовый</a>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Размер:</div>
+                  <div class="order-item__item-info">84</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Скидка:</div>
+                  <div class="order-item__item-info">20%</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Цена:</div>
+                  <div class="order-item__item-info">349₽</div>
+                  <div class="order-item__item-descr">6 850 ₽</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Вес:</div>
+                  <div class="order-item__item-info">2.5 кг</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Количество:</div>
+                  <div class="order-item__item-info">1 шт</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Сумма:</div>
+                  <div class="order-item__item-info">5 480 ₽</div>
+                  <div class="order-item__item-descr">6 850 ₽</div>
+                </div>
+              </div>
+              <div class="order-form__item order-item">
+                <a href="#" class="order-item__item order-item__img-block" aria-label="Страница товара">
+                  <img src="assets/img/content/temp/cart/item.webp" alt="">
+                </a>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Наименование:</div>
+                  <a href="#" class="order-item__item-info">Боди без рукавов "ФРУК-ТИК", розовый</a>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Размер:</div>
+                  <div class="order-item__item-info">84</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Скидка:</div>
+                  <div class="order-item__item-info">20%</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Цена:</div>
+                  <div class="order-item__item-info">349₽</div>
+                  <div class="order-item__item-descr">6 850 ₽</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Вес:</div>
+                  <div class="order-item__item-info">2.5 кг</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Количество:</div>
+                  <div class="order-item__item-info">1 шт</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Сумма:</div>
+                  <div class="order-item__item-info">5 480 ₽</div>
+                  <div class="order-item__item-descr">6 850 ₽</div>
+                </div>
+              </div>
+              <div class="order-form__item order-item">
+                <a href="#" class="order-item__item order-item__img-block" aria-label="Страница товара">
+                  <img src="assets/img/content/temp/cart/item.webp" alt="">
+                </a>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Наименование:</div>
+                  <a href="#" class="order-item__item-info">Боди без рукавов "ФРУК-ТИК", розовый</a>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Размер:</div>
+                  <div class="order-item__item-info">84</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Скидка:</div>
+                  <div class="order-item__item-info">20%</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Цена:</div>
+                  <div class="order-item__item-info">349₽</div>
+                  <div class="order-item__item-descr">6 850 ₽</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Вес:</div>
+                  <div class="order-item__item-info">2.5 кг</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Количество:</div>
+                  <div class="order-item__item-info">1 шт</div>
+                </div>
+                <div class="order-item__item">
+                  <div class="order-item__item-name">Сумма:</div>
+                  <div class="order-item__item-info">5 480 ₽</div>
+                  <div class="order-item__item-descr">6 850 ₽</div>
+                </div>
+              </div>
+            </div>
+            <div class="double-page__sidebar order-form__total">
+              <div class="order-form__title main-title">
+                Ваш заказ:
+              </div>
+              <div class="order-form__info">Товаров на: <span>10 800р</span></div>
+              <div class="order-form__price">Без скидки: 13: 500</div>
+              <div class="order-form__info">Общий вес: <span>5кг</span></div>
+              <div class="order-form__info">Доставка: <span>Бесплатно</span></div>
+              <div class="order-form__info">Экономия: <span>2 700р</span></div>
+              <div class="order-form__total-price">К оплате: 4 664₽</div>
+              <button type="button" class="order-form__enter-promo">
+                <span>Ввести промокод</span>
+                <svg>
+                  <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                </svg>
+              </button>
+              <button type="button" class="order-form__submit main-btn js-open-popup-btn"
+                data-popup-name="order">оформить заказ</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__column footer__column--tablet">
+        <ul class="footer__navigation">
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link _active">
+              Главная
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Доставка
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              О компании
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Мы в instagram
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Акции
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Новости
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Отзывы
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Контакты
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Лицензии
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Оплата и возврат
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Условия доставки
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__logo">
+          <img src="assets/img/logo/logo.png" alt="logo">
+        </a>
+        <span class="footer__copy">
+          2022 © «LalaSTORE»
+        </span>
+        <ul class="footer__pay">
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/mir.svg" alt="Мир" class="footer__pay-img footer__pay-img--mir">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/paykeeper.svg" alt="PayKeeper" class="footer__pay-img footer__pay-img--paykeeper">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/mastercard.svg" alt="MasterCard" class="footer__pay-img footer__pay-img--mastercard">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/visa.svg" alt="Visa" class="footer__pay-img footer__pay-img--visa">
+          </li>
+        </ul>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__column footer__column--desktop">
+        <address class="footer__address">
+          <ul class="footer__address-list">
+            <li class="footer__address-item footer__address-item--map-marker">
+              Адрес шоурума:, г. Москва, Электролитный проезд 3Б стр 6
+            </li>
+            <li class="footer__address-item">
+              <a href="mailto:info@lalastore.ru" class="footer__address-link footer__address-link--mail">info@lalastore.ru</a>
+            </li>
+            <li class="footer__address-item">
+              <a href="tel:+79163613000" class="footer__address-link footer__address-link--tel">+7 916 361-30-00</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup js-popup registration" data-popup-name="registration">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="registration__body">
+          <h2 class="registration__title main-title">
+            Регистрация
+          </h2>
+          <p class="registration__descr">
+            Зарегистрируйтесь, чтобы использовать все возможности личного кабинета: отслеживание заказов, настройку
+            подписки, связи с социальными сетями и другие. Мы никогда и ни при каких условиях не разглашаем личные
+            данные клиентов. Контактная информация будет использована только для оформления заказов и более удобной
+            работы с сайтом.
+          </p>
+          <div class="registration__body-inner">
+            <form action="#" class="registration__form registration-form" name="registration" id="registration">
+              <div class="registration-form__input-block input-block">
+                <label class="input-block__label" for="registration__name">Фамилия Имя Отчество *</label>
+                <input class="input-block__input input" type="text" id="registration__name" name="name" placeholder="Иванов Иван Иванович" autocomplete="on" required>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-mail">E-mail *</label>
+                  <input class="input-block__input input" type="email" id="registration-mail" name="mail" placeholder="ivanov@gmail.com" autocomplete="on" required>
+                </div>
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-phone">Телефон</label>
+                  <input class="input-block__input input" type="tel" id="registration-phone" name="phone" placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on">
+                </div>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-pass">Пароль *</label>
+                  <input class="input-block__input input" type="password" id="registration-pass" name="pass" placeholder="******" required>
+                </div>
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-pass-confirm">Подтверждение пароля *</label>
+                  <input class="input-block__input input" type="password" id="registration-pass-confirm" name="pass-confirm" placeholder="******" required>
+                </div>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block registration-form__input-captcha input-block">
+                  <label class="input-block__label" for="registration-captcha">Введите код *</label>
+                  <input class="input-block__input input" type="text" id="registration-captcha" name="captcha" placeholder="XXXXXX" required>
+                </div>
+                <div class="registration-form__captcha">
+                  капча
+                </div>
+              </div>
+              <div class="registration-form__btns">
+                <button type="submit" class="registration-form__submit main-btn">зарегистрироваться</button>
+                <button type="button" class="registration-form__btn js-open-popup-btn" data-popup-name="enter">Есть аккаунт?</button>
+                <label class="registration-form__input checkbox">
+                  <input class="checkbox__input" type="checkbox" name="agreement" required>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup js-popup enter" data-popup-name="enter">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="enter__body">
+          <h2 class="enter__title main-title">
+            Вход
+          </h2>
+          <div class="enter__body-inner">
+            <form action="#" class="enter__form enter-form" name="enter" id="enter">
+              <div class="enter-form__row">
+                <div class="enter-form__input-block input-block">
+                  <label class="input-block__label" for="enter-login">Логин *</label>
+                  <input class="input-block__input input" type="email" id="enter-login" name="login"
+                    placeholder="ivanov@gmail.com" autocomplete="on" required>
+                </div>
+                <div class="enter-form__input-block input-block">
+                  <label class="input-block__label" for="enter-pass">Пароль *</label>
+                  <input class="input-block__input input" type="password" id="enter-pass" name="pass"
+                    placeholder="*****" required>
+                </div>
+              </div>
+              <label class="enter-form__input checkbox">
+                <input class="checkbox__input" type="checkbox" name="agreement" required>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+              </label>
+              <div class="enter-form__btns">
+                <button type="submit" class="enter-form__submit main-btn">Войти</button>
+                <button type="button" class="enter-form__btn js-open-popup-btn" data-popup-name="registration">Нет аккаунта?</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="popup js-popup order">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="order__body">
+          <h2 class="order__title main-title">
+            Заполните поля для оформления заказа
+          </h2>
+          <div class="order__body-inner">
+            <form action="#" name="order-form" id="order-form" class="order__form js-spoller" data-min-width="1000">
+              <div class="order__form-block">
+                <fieldset class="order__form-fieldset">
+                  <legend class="order__legend section-title js-spoller-btn" data-spoller-name="region" data-active>
+                    <svg>
+                      <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                    </svg>
+                    <span>Тип покупателя и регион доставки:</span>
+                  </legend>
+                  <div class="order__form-area js-spoller-area" data-spoller-name="region">
+                    <div class="order__form-area-inner js-spoller-area-inner">
+                      <div class="order__form-info">
+                        Укажите свое местоположение
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="order-city">Населенный пункт *</label>
+                        <input class="input-block__input input" type="text" id="order-city" name="city"
+                          autocomplete="on" required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="order-index">Индекс *</label>
+                        <input class="input-block__input input" type="text" id="order-index" name="index"
+                          autocomplete="on" required>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="order__form-block">
+                <fieldset class="order__form-fieldset">
+                  <legend class="order__legend section-title js-spoller-btn" data-spoller-name="payment-method">
+                    <svg>
+                      <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                    </svg>
+                    <span>Способ оплаты:</span>
+                  </legend>
+                  <div class="order__form-area js-spoller-area" data-spoller-name="payment-method">
+                    <div class="order__form-area-inner js-spoller-area-inner">
+                      <div class="order__form-info">
+                        Наш менеджер свяжется с Вами и и сообщит данные для перевода
+                      </div>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="pay" value="visa-mastercard" checked>
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Оплата картами Visa/MasterCard на сайте</span>
+                      </label>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="pay" value="courier">
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Наличные курьеру (при курьерской доставке по Москве)</span>
+                      </label>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="pay" value="card">
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Переводом на банковскую карту</span>
+                      </label>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="pay" value="cash">
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Наличный расчет при самовывозе из шоу-рума</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="order__form-block order__form-block--delivery accordion">
+                <fieldset class="order__form-fieldset">
+                  <legend class="order__legend section-title js-spoller-btn" data-spoller-name="delivery">
+                    <svg>
+                      <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                    </svg>
+                    <span>Доставка:</span>
+                  </legend>
+                  <div class="order__form-area js-spoller-area" data-spoller-name="delivery">
+                    <div class="order__form-area-inner js-spoller-area-inner">
+                      <div class="order__form-info">
+                        Наш менеджер свяжется с Вами и и сообщит данные для перевода
+                      </div>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="delivery" value="post-office" checked>
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Официальный модуль Почты России (Доставка в отделение)<span
+                            class="checkbox__name-label">Бесплатно</span></span>
+                        <span class="checkbox__info">Самовывоз из отделения Почты России</span>
+                      </label>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="delivery" value="courier">
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Доставка курьером<span
+                            class="checkbox__name-label">370р</span></span>
+                        <span class="checkbox__info">Курьером до двери (по Москве в пределах МКАД) – стоимость 370
+                          рублей.</span>
+                      </label>
+                      <ul class="order__check-list check-list nested-inputs">
+                        <li class="check-list__item">
+                          <label class="order__input checkbox">
+                            <input class="checkbox__input nested-inputs__parent" type="radio" name="delivery"
+                              value="sdek-stock-door">
+                            <span class="checkbox__box"></span>
+                            <span class="checkbox__name">Служба доставки СДЭК (Посылка склад-дверь)<span
+                                class="checkbox__name-label">451р</span></span>
+                            <span class="checkbox__info">1-1 дн. Наименование тарифа: Посылка склад-дверь</span>
+                          </label>
+                          <ul class="check-list__nested">
+                            <li class="check-list__nested-item">
+                              <label class="order__input checkbox">
+                                <input class="checkbox__input nested-inputs__child" type="checkbox"
+                                  name="sdek-insurance">
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__name">Страхование груза (81р)</span>
+                                <span class="checkbox__info">Компания СДЭК может обеспечить страховую защиту всех видов
+                                  грузов на время доставки</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="delivery" value="sdek-stock-stock">
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Служба доставки СДЭК (Посылка склад-склад)<span
+                            class="checkbox__name-label">0р</span></span>
+                        <span class="checkbox__info">1-1 дн. Наименование тарифа: Посылка склад-склад. Услуга
+                          экономичной
+                          доставки товаров по России для компаний, осуществляющих дистанционную торговлю</span>
+                      </label>
+                      <ul class="order__check-list check-list nested-inputs">
+                        <li class="check-list__item">
+                          <label class="order__input checkbox">
+                            <input class="checkbox__input nested-inputs__parent" type="radio" name="delivery"
+                              value="sdek-stock-door-eco">
+                            <span class="checkbox__box"></span>
+                            <span class="checkbox__name">Служба доставки СДЭК (Экономичная посылка склад-дверь)<span
+                                class="checkbox__name-label">0р</span></span>
+                          </label>
+                          <ul class="check-list__nested">
+                            <li class="check-list__nested-item">
+                              <label class="order__input checkbox">
+                                <input class="checkbox__input nested-inputs__child" type="checkbox"
+                                  name="delivery-service">
+                                <span class="checkbox__box"></span>
+                                <span class="checkbox__name">Служба доставки СДЭК (Экономичная посылка склад-склад)<span
+                                    class="checkbox__name-label">81р</span></span>
+                                <span class="checkbox__info">Компания СДЭК может обеспечить страховую защиту всех видов
+                                  грузов на время доставки. Услуга экономичной наземной доставки товаров по России для
+                                  компаний, осуществляющих дистанционную торговлю. Услуга действует по направлениям из
+                                  Москвы в подразделения СДЭК, находящиеся за Уралом и в Крым</span>
+                              </label>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="radio" name="delivery" value="pickup">
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Самовывоз<span class="checkbox__name-label">Самовывоз</span></span>
+                        <span class="checkbox__info">Вы можете самостоятельно забрать заказ из нашего шоурума</span>
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="order__form-block">
+                <fieldset class="order__form-fieldset">
+                  <legend class="order__legend section-title js-spoller-btn" data-spoller-name="buyer">
+                    <svg>
+                      <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                    </svg>
+                    <span>Покупатель:</span>
+                  </legend>
+                  <div class="order__form-area js-spoller-area" data-spoller-name="buyer">
+                    <div class="order__form-area-inner js-spoller-area-inner">
+                      <div class="order__form-info">
+                        Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение", а
+                        город
+                        впишите в поле "Город"
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="order-name">Ф.И.О. *</label>
+                        <input class="input-block__input input" type="text" id="order-name" name="name"
+                          autocomplete="on" required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="order-mail">E-Mail *</label>
+                        <input class="input-block__input input" type="email" id="order-mail" name="mail"
+                          autocomplete="on" required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="order-phone">Телефон *</label>
+                        <input class="input-block__input input" type="tel" id="order-phone" name="phone"
+                          autocomplete="on" required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="order-address">Адрес доставки *</label>
+                        <input class="input-block__input input" type="text" id="order-address" name="address"
+                          autocomplete="on" required>
+                      </div>
+                      <div class="order__input-block input-block">
+                        <label class="input-block__label" for="order-comments">Комментарии к заказу:</label>
+                        <input class="input-block__input input" type="text" id="order-comments" name="comments">
+                      </div>
+                      <label class="order__input checkbox">
+                        <input class="checkbox__input" type="checkbox" name="agreement" required>
+                        <span class="checkbox__box"></span>
+                        <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+                      </label>
+                      <button type="submit" class="order__submit main-btn">оформить заказ</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="assets/js-min/main.min.js"></script>
+</body>
+
+</html>

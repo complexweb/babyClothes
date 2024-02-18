@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="assets/css-min/style.min.css">
+  
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__top header-top">
+    <div class="container">
+      <div class="header-top__inner" id="header-top-inner">
+        <address class="header-top__address header-address" id="header-address">
+          <div class="header-address__item header-address__item-address">
+            <span class="">г. Москва, Электролитный проезд 3Б стр 6</span>
+          </div>
+          <a href="tel:+7 916 361-30-00" class="header-address__item header-address__item-phone"
+            title="Позвонить +7 916 361-30-00" aria-label="Связаться с нами по номеру +7 916 361-30-00">
+            <svg>
+              <use xlink:href="assets/img/icons/icons.svg#phone"></use>
+            </svg>
+            <span>+7 916 361-30-00</span>
+          </a>
+        </address>
+        <nav class="header-top__nav header-nav" id="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item header-nav__item-drop" id="header-nav-item-drop">
+              <div class="header-nav__item-text" id="header-catalog">
+                <div class="header-nav__item-text-burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <span>Каталог</span>
+                <svg>
+                  <use xlink:href="assets/img/icons/icons.svg#triangle"></use>
+                </svg>
+              </div>
+              <div class="header-nav__drop header-nav-drop">
+                <div class="container">
+                  <div class="header-nav-drop__inner" id="header-nav-drop-inner">
+                    <ul class="header-nav-drop__list" id="header-catalog-drop">
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="clothes">Одежда</a>
+                        <ul class="nav-drop__list" data-catalog-drop="clothes">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Изделия из муслина</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Боди</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Песочники</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Нательные комбинезоны (слипы)</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны из футера</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны вязаные</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Демисезонные комбинезоны</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Комбинезоны-трансформеры</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Головные уборы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Носочки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Нагрудники</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="napkins">Пеленки</a>
+                        <ul class="nav-drop__list" data-catalog-drop="napkins">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленальные коконы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из фланели</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из муслина</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пеленки из интерлока</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="envelopes-and-blankets">Конверты и
+                          пледы</a>
+                        <ul class="nav-drop__list" data-catalog-drop="envelopes-and-blankets">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Конверты в коляску</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Пледы</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Конверты на выписку</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item nav-drop">
+                        <a href="#" class="nav-drop__link" data-catalog-name="accessories">Аксессуары</a>
+                        <ul class="nav-drop__list" data-catalog-drop="accessories">
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Сумки-органайзеры</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Муфты-варежки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Грызунки</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Альбомы для фотографий</a>
+                          </li>
+                          <li class="nav-drop__item">
+                            <a href="#" class="nav-drop__item-link">Держатели для соски/грузунка</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="header-nav-drop__item">
+                        <a href="#" class="nav-drop__link">Готовые подборки</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link _active">Главная</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Как купить</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Доставка</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">О компании</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Мы в instagram</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Акции</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom header-bottom">
+    <div class="container">
+      <div class="header-bottom__inner">
+        <button type="button" class="header-bottom__mobile-btn burger-btn" aria-label="Главное меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a href="#" class="header-bottom__logo logo" id="header-logo">
+          <img src="assets/img/logo/logo.png" alt="Logo">
+        </a>
+        <form class="header-bottom__search main-search" id="main-search" action="#" name="search">
+          <div class="main-search__block">
+            <div class="main-search__input-block">
+              <input type="text" class="main-search__input" placeholder="Начните писать">
+              <svg class="main-search__input-icon">
+                <use xlink:href="assets/img/icons/icons.svg#search"></use>
+              </svg>
+              <div class="main-search-suggest">
+                <ul class="main-search-suggest__list">
+                  <li class="main-search-suggest__item">
+                    Детские пеленки
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Конверты на выписку для мальчика
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Соски
+                  </li>
+                  <li class="main-search-suggest__item">
+                    Грызунки
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="submit" class="main-search__submit" aria-label="Найти">
+              <span>
+                Найти
+              </span>
+              <svg class="main-search__submit-icon">
+                <use xlink:href="assets/img/icons/icons.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+        <button type="button" class="header-bottom__search-mobile-btn search-mobile-btn"
+          aria-label="Открыть поиск по сайту">
+          <svg class="search-mobile-btn__icon">
+            <use xlink:href="assets/img/icons/icons.svg#search"></use>
+          </svg>
+        </button>
+        <ul class="header-bottom__actions user-actions">
+          <li class="user-actions__item user-actions__item--favorites" id="user-actions-item-favorite">
+            <a href="#" class="user-actions__link" id="header-favorite">
+              <svg class="user-actions__link-icon user-actions__link-icon--heart">
+                <use xlink:href="assets/img/icons/icons.svg#heart"></use>
+              </svg>
+              <span class="user-actions__link-text">Избранное</span>
+            </a>
+          </li>
+          <li class="user-actions__item" id="user-actions-item-cart">
+            <a href="#" class="user-actions__link" id="header-cart">
+              <svg class="user-actions__link-icon user-actions__link-icon--basket">
+                <use xlink:href="assets/img/icons/icons.svg#basket"></use>
+              </svg>
+              <span class="user-actions__link-text">Корзина</span>
+            </a>
+          </li>
+          <li class="user-actions__item" id="user-actions-item-user">
+            <button type="button" class="user-actions__link js-open-popup-btn" id="header-user"  data-popup-name="enter">
+              <svg class="user-actions__link-icon user-actions__link-icon--user">
+                <use xlink:href="assets/img/icons/icons.svg#user"></use>
+              </svg>
+              <span class="user-actions__link-text">Войти</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile-search mobile-search">
+    <div class="container">
+      <div class="mobile-search__inner" id="mobile-search">
+        <button type="button" class="mobile-search__close close-btn" aria-label="Закрыть поиск по сайту">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__mobile-menu mobile-menu">
+    <div class="mobile-menu__body">
+      <div class="container">
+        <div class="mobile-menu__inner" id="mobile-menu">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__catalog-menu catalog-menu">
+    <div class="catalog-menu__body">
+      <div class="catalog-menu__header">
+        <div class="container">
+          <div class="catalog-menu__header-inner">
+            <button type="button" class="catalog-menu__close close-btn close-btn--white">
+              <span></span>
+              <span></span>
+            </button>
+            <div class="catalog-menu__header-name">
+              Каталог
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog-menu__header-body" id="catalog-menu">
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-footer">
+  <div class="container">
+    <div class="mobile-footer__inner">
+      <ul class="mobile-footer__list">
+        <li class="mobile-footer__list-item" id="mobile-footer-catalog" role="button" aria-label="Каталог"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-favorite" role="button" aria-label="Избранное"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-cart" role="button" aria-label="Корзина"></li>
+        <li class="mobile-footer__list-item" id="mobile-footer-user" role="button" aria-label="Войти"></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <main class="main">
+    <section class="hero">
+  <div class="container">
+    <div class="hero__inner">
+      <a href="#" class="hero__banner large-banner">
+        <div class="large-banner__bg bg-img">
+          <img src="assets/img/content/temp/hero/large-banner-bg.webp" class="large-banner__bg-img bg-img__item" alt="Распродажа">
+        </div>
+        <div class="large-banner__inner">
+          <h1 class="large-banner__title main-title">
+            Большая зимняя распродажа от LeoKid
+          </h1>
+          <p class="large-banner__text">
+            Конверт Leokid Classic подходит для использования в любых колясках, автокреслах и санках. Для прогулок
+            осенью, зимой, весной и даже прохладным летом.
+          </p>
+        </div>
+      </a>
+      <a href="#" class="hero__banner small-banner">
+        <div class="small-banner__bg bg-img">
+          <img src="assets/img/content/temp/hero/small-banner-bg.webp" class="small-banner__bg-img bg-img__item" alt="Подборка">
+        </div>
+        <div class="small-banner__inner">
+          <div class="small-banner__name">
+            <span>Подборка №106</span>
+          </div>
+          <div class="small-banner__price">
+            <span>1 221р</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+    <section class="catalog-section section--margin">
+      <div class="catalog-section__title-wrapper">
+        <h2 class="catalog-section__title main-title">
+          Каталог
+        </h2>
+      </div>
+      <div class="container">
+        <div class="catalog-section__inner">
+          <ul class="catalog-section__list">
+            <li class="catalog-section__item">
+              <a href="#" class="catalog-section__link catalog-item">
+                <div class="catalog-item__bg bg-img">
+                  <img src="assets/img/content/index/catalog-bg-1.webp" class="catalog-item__bg-img bg-img__item" alt="">
+                </div>
+                <span class="catalog-item__name">АКСЕССУАРЫ</span>
+              </a>
+            </li>
+            <li class="catalog-section__item">
+              <a href="#" class="catalog-section__link catalog-item">
+                <div class="catalog-item__bg bg-img">
+                  <img src="assets/img/content/index/catalog-bg-2.webp" class="catalog-item__bg-img bg-img__item" alt="">
+                </div>
+                <span class="catalog-item__name">КОНВЕРТЫ И ПЛЕДЫ</span>
+              </a>
+            </li>
+            <li class="catalog-section__item">
+              <a href="#" class="catalog-section__link catalog-item">
+                <div class="catalog-item__bg bg-img">
+                  <img src="assets/img/content/index/catalog-bg-3.webp" class="catalog-item__bg-img bg-img__item" alt="">
+                </div>
+                <span class="catalog-item__name">ГОТОВЫЕ ПОДБОРКИ</span>
+              </a>
+            </li>
+            <li class="catalog-section__item">
+              <a href="#" class="catalog-section__link catalog-item">
+                <div class="catalog-item__bg bg-img">
+                  <img src="assets/img/content/index/catalog-bg-4.webp" class="catalog-item__bg-img bg-img__item" alt="">
+                </div>
+                <span class="catalog-item__name">ОДЕЖДА</span>
+              </a>
+            </li>
+            <li class="catalog-section__item">
+              <a href="#" class="catalog-section__link catalog-item">
+                <div class="catalog-item__bg bg-img">
+                  <img src="assets/img/content/index/catalog-bg-5.webp" class="catalog-item__bg-img bg-img__item" alt="">
+                </div>
+                <span class="catalog-item__name">ПЕЛЕНКИ</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="selections section--margin">
+      <div class="container">
+        <div class="selections__inner">
+          <h2 class="selections__title main-title">
+            Готовые подборки
+          </h2>
+          <div class="selections__slider swiper">
+            <div class="selections__slider-inner swiper-wrapper">
+              <div class="selections__item selection-body swiper-slide">
+                <a href="#" class="selection-body__link">
+                  <div class="selection-body__img-block">
+                    <img src="assets/img/content/temp/index/selection-1.webp" alt="Подборка" class="selection-body__img">
+                  </div>
+                  <div class="selection-body__name-wrapper">
+                    <span class="selection-body__name">
+                      Подборка №106
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="selections__item selection-body swiper-slide">
+                <a href="#" class="selection-body__link">
+                  <div class="selection-body__img-block">
+                    <img src="assets/img/content/temp/index/selection-2.webp" alt="Подборка" class="selection-body__img">
+                  </div>
+                  <div class="selection-body__name-wrapper">
+                    <span class="selection-body__name">
+                      Подборка №106
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="selections__item selection-body swiper-slide">
+                <a href="#" class="selection-body__link">
+                  <div class="selection-body__img-block">
+                    <img src="assets/img/content/temp/index/selection-3.webp" alt="Подборка" class="selection-body__img">
+                  </div>
+                  <div class="selection-body__name-wrapper">
+                    <span class="selection-body__name">
+                      Подборка №106
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="selections__item selection-body swiper-slide">
+                <a href="#" class="selection-body__link">
+                  <div class="selection-body__img-block">
+                    <img src="assets/img/content/temp/index/selection-4.webp" alt="Подборка" class="selection-body__img">
+                  </div>
+                  <div class="selection-body__name-wrapper">
+                    <span class="selection-body__name">
+                      Подборка №106
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="selections__item selection-body swiper-slide">
+                <a href="#" class="selection-body__link">
+                  <div class="selection-body__img-block">
+                    <img src="assets/img/content/temp/index/selection-4.webp" alt="Подборка" class="selection-body__img">
+                  </div>
+                  <div class="selection-body__name-wrapper">
+                    <span class="selection-body__name">
+                      Подборка №106
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="slider__controls slider-controls">
+              <button type="button" class="slider-controls__prev slider-btn-prev" aria-label="Предыдущий слайд"></button>
+              <button type="button" class="slider-controls__next slider-btn-next" aria-label="Следующий слайд"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container">
+        <h2 class="map__title main-title">
+          Адрес шоурума
+        </h2>
+      </div>
+      <div class="map__body">
+        <div class="map__area" id="map"></div>
+        <div class="container">
+          <div class="map__inner">
+            <address class="map__info address">
+              <dl class="address__list">
+                <div class="address__list-block">
+                  <dt>Адрес шоурума:</dt>
+                  <dd>Адрес шоурума:, г. Москва,<br>Электролитный проезд 3Б стр 6</dd>
+                </div>
+                <div class="address__list-block">
+                  <dt>Метро:</dt>
+                  <dd>Нагорная</dd>
+                </div>
+                <div class="address__list-block">
+                  <dt>Режим работы:</dt>
+                  <dd>Вторник-суббота : 10:00-19:00</dd>
+                </div>
+                <div class="address__list-block">
+                  <dt>Выходной:</dt>
+                  <dd>Воскресенье, понедельник : выходной</dd>
+                </div>
+                <div class="address__list-block">
+                  <dt>Телефон:</dt>
+                  <dd><a href="tel:+79163613000">+7 916 361-30-00</a></dd>
+                </div>
+                <div class="address__list-block">
+                  <dt>Почта:</dt>
+                  <dd><a href="mailto:info@lalastore.ru">info@lalastore.ru</a></dd>
+                </div>
+              </dl>
+            </address>
+            <p class="map__descr">
+              Пожалуйста, свяжитесь с нами перед посещением, чтобы мы могли согласовать время вашего визита и наличие
+              товаров.
+            </p>
+            <button type="button" class="map__btn main-btn">Написать нам</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription">
+      <div class="container">
+        <div class="subscription__inner">
+          <h3 class="subscription__title main-title">
+            Подпишитесь на нашу рассылку
+          </h3>
+          <p class="subscription__descr">
+            Присоединяйтесь к программе LFLF STORE, чтобы получать постоянные скидки и персональные предложения
+          </p>
+          <button type="button" class="subscription__btn main-btn main-btn--arrow">
+            оформить подписку
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us section--margin">
+      <div class="container">
+        <div class="about-us__inner">
+          <h3 class="about-us__title main-title">
+            О компании
+          </h3>
+          <div class="about-us__descr">
+            <p>
+              LalaStore - магазин качественной и модной одежды и товаров для новорожденных и малышей до года. <br>
+              У нас вы подберете стильный комплект на выписку и базовый гардероб на первый год вашего ребенка.
+            </p>
+            <p>
+              Качество товаров на высоте, так как мы работаем только с проверенными поставщиками. Все изделия имеют <br>
+              сертификаты качества.
+            </p>
+            <p>
+              Нам доверяют, и к нам возвращаются!
+            </p>
+          </div>
+          <dl class="about-us__list">
+            <div class="about-us__item">
+              <dt>
+                <div class="about-us__item-icon about-us__item-icon--clock"></div>
+                <span class="about-us__item-name">
+                  Быстрая доставка
+                </span>
+              </dt>
+              <dd>
+                Бережно доставляем товары
+                по России за 24 часа
+              </dd>
+            </div>
+            <div class="about-us__item">
+              <dt>
+                <div class="about-us__item-icon about-us__item-icon--star"></div>
+                <span class="about-us__item-name">
+                  Гарантия качества
+                </span>
+              </dt>
+              <dd>
+                Соответствуем требованиям и стандартам качества
+              </dd>
+            </div>
+            <div class="about-us__item">
+              <dt>
+                <div class="about-us__item-icon about-us__item-icon--tag"></div>
+                <span class="about-us__item-name">
+                  Доступные цены
+                </span>
+              </dt>
+              <dd>
+                Работаем напрямую с ведущими производителями
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommended section--margin">
+      <div class="container">
+        <div class="recommended__inner">
+          <h4 class="recommended__title main-title">
+            Ранее вы смотрели
+          </h4>
+          <ul class="recommended__list">
+            <li class="recommended__item product-item">
+  <a href="#" class="product-item__img-wrapper">
+    <img src="assets/img/content//temp/product-item/product-item-1.webp" class="product-item__img"
+      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
+    <div class="product-item__label product-item__label--on-offer">В наличии</div>
+  </a>
+  <a href="#" class="product-item__name">
+    Боди без рукавов "ФРУК-ТИК", розовый
+  </a>
+  <span class="product-item__price">
+    349
+    <span>₽/шт</span>
+  </span>
+  <button type="button" class="product-item__btn main-btn">
+    купить в 1 клик
+  </button>
+</li>
+            <li class="recommended__item product-item">
+  <a href="#" class="product-item__img-wrapper">
+    <img src="assets/img/content//temp/product-item/product-item-2.webp" class="product-item__img"
+      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
+    <div class="product-item__label product-item__label--on-offer">В наличии</div>
+  </a>
+  <a href="#" class="product-item__name">
+    Боди без рукавов "ФРУК-ТИК", розовый
+  </a>
+  <span class="product-item__price">
+    349
+    <span>₽/шт</span>
+  </span>
+  <button type="button" class="product-item__btn main-btn">
+    купить в 1 клик
+  </button>
+</li>
+            <li class="recommended__item product-item">
+  <a href="#" class="product-item__img-wrapper">
+    <img src="assets/img/content//temp/product-item/product-item-3.webp" class="product-item__img"
+      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
+    <div class="product-item__label product-item__label--on-offer">В наличии</div>
+  </a>
+  <a href="#" class="product-item__name">
+    Боди без рукавов "ФРУК-ТИК", розовый
+  </a>
+  <span class="product-item__price">
+    349
+    <span>₽/шт</span>
+  </span>
+  <button type="button" class="product-item__btn main-btn">
+    купить в 1 клик
+  </button>
+</li>
+            <li class="recommended__item product-item">
+  <a href="#" class="product-item__img-wrapper">
+    <img src="assets/img/content//temp/product-item/product-item-4.webp" class="product-item__img"
+      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
+    <div class="product-item__label product-item__label--not-available">Нет в наличии</div>
+  </a>
+  <a href="#" class="product-item__name">
+    Боди без рукавов "ФРУК-ТИК", розовый
+  </a>
+  <span class="product-item__price">
+    349
+    <span>₽/шт</span>
+  </span>
+  <button type="button" class="product-item__btn main-btn">
+    купить в 1 клик
+  </button>
+</li>
+            <li class="recommended__item recommended__item--mobile-hidden product-item">
+  <a href="#" class="product-item__img-wrapper">
+    <img src="assets/img/content//temp/product-item/product-item-5.webp" class="product-item__img"
+      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
+    <div class="product-item__label product-item__label--in-stock">На складе</div>
+  </a>
+  <a href="#" class="product-item__name">
+    Боди без рукавов "ФРУК-ТИК", розовый
+  </a>
+  <span class="product-item__price">
+    349
+    <span>₽/шт</span>
+  </span>
+  <button type="button" class="product-item__btn main-btn">
+    купить в 1 клик
+  </button>
+</li>
+            <li class="recommended__item recommended__item--mobile-hidden product-item">
+  <a href="#" class="product-item__img-wrapper">
+    <img src="assets/img/content//temp/product-item/product-item-6.webp" class="product-item__img"
+      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
+    <div class="product-item__label product-item__label--on-offer">В наличии</div>
+  </a>
+  <a href="#" class="product-item__name">
+    Боди без рукавов "ФРУК-ТИК", розовый
+  </a>
+  <span class="product-item__price">
+    349
+    <span>₽/шт</span>
+  </span>
+  <button type="button" class="product-item__btn main-btn">
+    купить в 1 клик
+  </button>
+</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="newslettet section--margin">
+      <div class="container">
+        <div class="newsletter__inner">
+          <h4 class="newsletter__title main-title">
+            Подписаться на рассылку
+          </h4>
+          <form action="#" class="newsletter__form" name="newslettet">
+            <label class="newsletter__form-label" for="newsletter-email">Почта</label>
+            <div class="newsletter__form-row">
+              <input class="newsletter__form-input input" id="newsletter-email" type="email" name="email" placeholder="e-mail.com" autocomplete="on" required>
+              <button type="submit" class="newsletter__form-btn main-btn">Подписаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__column footer__column--tablet">
+        <ul class="footer__navigation">
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link _active">
+              Главная
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Доставка
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              О компании
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Мы в instagram
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Акции
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Как купить
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Новости
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Отзывы
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Контакты
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Лицензии
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Оплата и возврат
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="#" class="footer__navigation-link">
+              Условия доставки
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <a href="#" class="footer__logo">
+          <img src="assets/img/logo/logo.png" alt="logo">
+        </a>
+        <span class="footer__copy">
+          2022 © «LalaSTORE»
+        </span>
+        <ul class="footer__pay">
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/mir.svg" alt="Мир" class="footer__pay-img footer__pay-img--mir">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/paykeeper.svg" alt="PayKeeper" class="footer__pay-img footer__pay-img--paykeeper">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/mastercard.svg" alt="MasterCard" class="footer__pay-img footer__pay-img--mastercard">
+          </li>
+          <li class="footer__pay-item">
+            <img src="assets/img/icons/visa.svg" alt="Visa" class="footer__pay-img footer__pay-img--visa">
+          </li>
+        </ul>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+      </div>
+      <div class="footer__column footer__column--desktop">
+        <address class="footer__address">
+          <ul class="footer__address-list">
+            <li class="footer__address-item footer__address-item--map-marker">
+              Адрес шоурума:, г. Москва, Электролитный проезд 3Б стр 6
+            </li>
+            <li class="footer__address-item">
+              <a href="mailto:info@lalastore.ru" class="footer__address-link footer__address-link--mail">info@lalastore.ru</a>
+            </li>
+            <li class="footer__address-item">
+              <a href="tel:+79163613000" class="footer__address-link footer__address-link--tel">+7 916 361-30-00</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="popup js-popup registration" data-popup-name="registration">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="registration__body">
+          <h2 class="registration__title main-title">
+            Регистрация
+          </h2>
+          <p class="registration__descr">
+            Зарегистрируйтесь, чтобы использовать все возможности личного кабинета: отслеживание заказов, настройку
+            подписки, связи с социальными сетями и другие. Мы никогда и ни при каких условиях не разглашаем личные
+            данные клиентов. Контактная информация будет использована только для оформления заказов и более удобной
+            работы с сайтом.
+          </p>
+          <div class="registration__body-inner">
+            <form action="#" class="registration__form registration-form" name="registration" id="registration">
+              <div class="registration-form__input-block input-block">
+                <label class="input-block__label" for="registration__name">Фамилия Имя Отчество *</label>
+                <input class="input-block__input input" type="text" id="registration__name" name="name" placeholder="Иванов Иван Иванович" autocomplete="on" required>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-mail">E-mail *</label>
+                  <input class="input-block__input input" type="email" id="registration-mail" name="mail" placeholder="ivanov@gmail.com" autocomplete="on" required>
+                </div>
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-phone">Телефон</label>
+                  <input class="input-block__input input" type="tel" id="registration-phone" name="phone" placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on">
+                </div>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-pass">Пароль *</label>
+                  <input class="input-block__input input" type="password" id="registration-pass" name="pass" placeholder="******" required>
+                </div>
+                <div class="registration-form__input-block input-block">
+                  <label class="input-block__label" for="registration-pass-confirm">Подтверждение пароля *</label>
+                  <input class="input-block__input input" type="password" id="registration-pass-confirm" name="pass-confirm" placeholder="******" required>
+                </div>
+              </div>
+              <div class="registration-form__row">
+                <div class="registration-form__input-block registration-form__input-captcha input-block">
+                  <label class="input-block__label" for="registration-captcha">Введите код *</label>
+                  <input class="input-block__input input" type="text" id="registration-captcha" name="captcha" placeholder="XXXXXX" required>
+                </div>
+                <div class="registration-form__captcha">
+                  капча
+                </div>
+              </div>
+              <div class="registration-form__btns">
+                <button type="submit" class="registration-form__submit main-btn">зарегистрироваться</button>
+                <button type="button" class="registration-form__btn js-open-popup-btn" data-popup-name="enter">Есть аккаунт?</button>
+                <label class="registration-form__input checkbox">
+                  <input class="checkbox__input" type="checkbox" name="agreement" required>
+                  <span class="checkbox__box"></span>
+                  <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup js-popup enter" data-popup-name="enter">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="enter__body">
+          <h2 class="enter__title main-title">
+            Вход
+          </h2>
+          <div class="enter__body-inner">
+            <form action="#" class="enter__form enter-form" name="enter" id="enter">
+              <div class="enter-form__row">
+                <div class="enter-form__input-block input-block">
+                  <label class="input-block__label" for="enter-login">Логин *</label>
+                  <input class="input-block__input input" type="email" id="enter-login" name="login"
+                    placeholder="ivanov@gmail.com" autocomplete="on" required>
+                </div>
+                <div class="enter-form__input-block input-block">
+                  <label class="input-block__label" for="enter-pass">Пароль *</label>
+                  <input class="input-block__input input" type="password" id="enter-pass" name="pass"
+                    placeholder="*****" required>
+                </div>
+              </div>
+              <label class="enter-form__input checkbox">
+                <input class="checkbox__input" type="checkbox" name="agreement" required>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+              </label>
+              <div class="enter-form__btns">
+                <button type="submit" class="enter-form__submit main-btn">Войти</button>
+                <button type="button" class="enter-form__btn js-open-popup-btn" data-popup-name="registration">Нет аккаунта?</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="http://maps.google.com/maps/api/js?sensor=false&_v=20240218201059"></script>
+  <script src="assets/js-min/main.min.js"></script>
+</body>
+
+</html>
