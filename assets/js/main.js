@@ -13919,27 +13919,6 @@ const swiper = new Swiper('.selections__slider', {
   }
 });
 
-function indexMap() {
-  var latlng = new google.maps.LatLng(55.7549905, 37.6064175);
-  var options = {
-    scrollwheel: false,
-    zoom: 14,
-    panControl: false,
-    mapTypeControl: false,
-    center: latlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var map = new google.maps.Map(document.getElementById('map'), options);
-  var marker = new google.maps.Marker({
-    position: latlng,
-    map: map
-  });
-}
-
-if (document.getElementById('map')) {
-  indexMap();
-}
-
 //main-search
 document.querySelectorAll('.main-search').forEach((mainsearch) => {
   const searchInput = mainsearch.querySelector('.main-search__input');
@@ -14671,7 +14650,7 @@ document.querySelectorAll('.nested-inputs').forEach((body) => {
       targetRadio.push(radioInputs[i]);
     }
   }
- 
+
   //select any input radio
   targetRadio.forEach((radio) => {
     radio.addEventListener('change', () => {
@@ -14679,7 +14658,7 @@ document.querySelectorAll('.nested-inputs').forEach((body) => {
         for (let i = 0; i < childInputs.length; i++) {
           childInputs[i].checked = false;
         }
-      } 
+      }
     })
   });
   //disabled child Inputs if click any input radio
@@ -14688,7 +14667,7 @@ document.querySelectorAll('.nested-inputs').forEach((body) => {
       if (!parentInput.checked) {
         e.preventDefault();
         for (let i = 0; i < childInputs.length; i++) {
-          childInputs[i].setAttribute('disabled','');
+          childInputs[i].setAttribute('disabled', '');
         }
       }
     })
@@ -14702,3 +14681,22 @@ document.querySelectorAll('.nested-inputs').forEach((body) => {
   })
 
 });
+
+
+
+// google map
+
+if (document.getElementById('map')) {
+  let map;
+
+  async function initMap() {
+    const { Map } = await google.maps.importLibrary("maps");
+
+    map = new Map(document.getElementById("map"), {
+      center: { lat: -34.397, lng: 150.644 },
+      zoom: 8,
+    });
+  }
+
+  initMap();
+}
