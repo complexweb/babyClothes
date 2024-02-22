@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Боди</title>
-  <link rel="stylesheet" href="assets/css-min/style.min.css">
+  <link rel="stylesheet" href="assets/css-min/style.min.css?_v=20240222195559">
   
 </head>
 
@@ -1025,7 +1025,7 @@
   </div>
 </footer>
 
-<div class="popup js-popup registration" data-popup-name="registration">
+<div class="popup js-popup registration @@regactive" data-popup-name="registration">
   <div class="popup__table" role="complementary">
     <div class="popup__table-cell js-popup-area">
       <div class="popup__window">
@@ -1044,32 +1044,38 @@
             <form action="#" class="registration__form registration-form" name="registration" id="registration">
               <div class="registration-form__input-block input-block">
                 <label class="input-block__label" for="registration__name">Фамилия Имя Отчество *</label>
-                <input class="input-block__input input" type="text" id="registration__name" name="name" placeholder="Иванов Иван Иванович" autocomplete="on" required>
+                <input class="input-block__input input" type="text" id="registration__name" name="name"
+                  placeholder="Иванов Иван Иванович" autocomplete="on" required>
               </div>
               <div class="registration-form__row">
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-mail">E-mail *</label>
-                  <input class="input-block__input input" type="email" id="registration-mail" name="mail" placeholder="ivanov@gmail.com" autocomplete="on" required>
+                  <input class="input-block__input input" type="email" id="registration-mail" name="mail"
+                    placeholder="ivanov@gmail.com" autocomplete="on" required>
                 </div>
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-phone">Телефон</label>
-                  <input class="input-block__input input" type="tel" id="registration-phone" name="phone" placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on">
+                  <input class="input-block__input input" type="tel" id="registration-phone" name="phone"
+                    placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on">
                 </div>
               </div>
               <div class="registration-form__row">
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-pass">Пароль *</label>
-                  <input class="input-block__input input" type="password" id="registration-pass" name="pass" placeholder="******" required>
+                  <input class="input-block__input input" type="password" id="registration-pass" name="pass"
+                    placeholder="******" required>
                 </div>
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-pass-confirm">Подтверждение пароля *</label>
-                  <input class="input-block__input input" type="password" id="registration-pass-confirm" name="pass-confirm" placeholder="******" required>
+                  <input class="input-block__input input" type="password" id="registration-pass-confirm"
+                    name="pass-confirm" placeholder="******" required>
                 </div>
               </div>
               <div class="registration-form__row">
                 <div class="registration-form__input-block registration-form__input-captcha input-block">
                   <label class="input-block__label" for="registration-captcha">Введите код *</label>
-                  <input class="input-block__input input" type="text" id="registration-captcha" name="captcha" placeholder="XXXXXX" required>
+                  <input class="input-block__input input" type="text" id="registration-captcha" name="captcha"
+                    placeholder="XXXXXX" required>
                 </div>
                 <div class="registration-form__captcha">
                   капча
@@ -1077,7 +1083,8 @@
               </div>
               <div class="registration-form__btns">
                 <button type="submit" class="registration-form__submit main-btn">зарегистрироваться</button>
-                <button type="button" class="registration-form__btn js-open-popup-btn" data-popup-name="enter">Есть аккаунт?</button>
+                <button type="button" class="registration-form__btn js-open-popup-btn" data-popup-name="enter">Есть
+                  аккаунт?</button>
                 <label class="registration-form__input checkbox">
                   <input class="checkbox__input" type="checkbox" name="agreement" required>
                   <span class="checkbox__box"></span>
@@ -1091,7 +1098,7 @@
     </div>
   </div>
 </div>
-<div class="popup js-popup enter" data-popup-name="enter">
+<div class="popup js-popup enter @@enteractive" data-popup-name="enter">
   <div class="popup__table" role="complementary">
     <div class="popup__table-cell js-popup-area">
       <div class="popup__window">
@@ -1131,7 +1138,7 @@
   </div>
 </div>
 
-  <script src="assets/js-min/main.min.js"></script>
+  <script src="assets/js-min/main.min.js?_v=20240222195559"></script>
 </body>
 
 </html>

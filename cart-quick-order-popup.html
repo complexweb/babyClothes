@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Доставка</title>
+  <title>Корзина</title>
   <link rel="stylesheet" href="assets/css-min/style.min.css?_v=20240222195559">
   
 </head>
-
-<body>
-  <header class="header">
+  
+  <body class="_active-popup">
+    <header class="header">
   <div class="header__top header-top">
     <div class="container">
       <div class="header-top__inner" id="header-top-inner">
@@ -302,81 +302,249 @@
     </div>
   </div>
 </div>
-
-  <main class="main">
-    <div class="page-info page-info--mobile-hidden">
-      <div class="page-info__title-block">
-        <div class="container">
-          <h1 class="page__title main-title page-title-center">
-            Доставка
-          </h1>
+  
+    <main class="main">
+      <div class="page-info page-info__cart-page">
+        <div class="page-info__title-block page-title-block">
+          <div class="container">
+            <div class="page-title-block__body">
+              <div class="page-title-block__inner">
+                <h1 class="page-title-block__title main-title">
+                  Корзина
+                </h1>
+                <button type="button" class="page-title-block__clean-btn">
+                  <svg>
+                    <use xlink:href="assets/img/icons/icons.svg#cart"></use>
+                  </svg>
+                  <span>Удалить все</span>
+                </button>
+              </div>
+              <button type="button" class="page-title-block__download-btn">
+                <svg>
+                  <use xlink:href="assets/img/icons/icons.svg#download"></use>
+                </svg>
+                <span>Скачать файлом</span>
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div class="page-info__breadcrumbs breadcrumbs">
-        <div class="container">
-          <div class="breadcrumbs__inner">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a href="#">
-                  Главная
-                </a>
-              </li>
-              <li class="breadcrumbs__item">
-                Доставка
-              </li>
-            </ul>
+  
+        <div class="page-info__breadcrumbs breadcrumbs">
+          <div class="container">
+            <div class="breadcrumbs__inner">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a href="#">
+                    Главная
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  Корзина
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-
-    <section class="delivery-page section--margin">
-      <div class="container">
-        <div class="delivery-page__inner">
-          <h2 class="delivery-page__title main-title">
-            Способы доставки:
-          </h2>
-          <p class="delivery-page__descr">
-            Доставка ваших заказов осуществляется по всей России следующими способами:
-          </p>
-          <ol class="delivery-page__list">
-            <li class="delivery-page__list-item">
-              Курьером до двери (по Москве в пределах МКАД) – стоимость 400 рублей. Удобные для вас дата и время
-              доставки согласовывается с вами заблаговременно. Срочная курьерская доставка (день в день) по Москве в
-              пределах МКАД – 500 руб. (при наличии свободного курьера).
-            </li>
-            <li class="delivery-page__list-item">
-              Компанией СДЭК (до пункта выдачи заказов, удобного для вас в вашем городе или до двери) – стоимость и срок
-              доставки* зависит от вашего города проживания и размера упаковки вашего заказа.
-            </li>
-            <li class="delivery-page__list-item">
-              Почтой России (до удобного вам отделения связи) – стоимость и срок доставки* зависит от вашего города
-              проживания и размера упаковки вашего заказа.
-              <span>*Отправление заказов осуществляется в срок от 1-3 раб.дн. с момента оплаты вами заказа. (Зачастую
-                отправления заказов осуществляются в срок 1-2 дня).</span>
-              Заказы, сделанные в пятницу после 15:00 и в выходные дни - подтверждаются в понедельник и ближайшая
-              доставка по Москве – вторник или среда.
-            </li>
-            <li class="delivery-page__list-item">
-              Самовывоз - возможен из шоу-рума (согласно графика работы) по адресу: г. Москва, м.Нагорная, Электролитный
-              проезд 3Б стр 6 (5 мин от метро Нагорная). Предварительно согласовывается наличие товара и время забора
-              заказа.
-            </li>
-          </ol>
+  
+  
+      <section class="cart-page double-page section--margin">
+        <div class="container">
+          <div class="double-page__inner">
+            <div class="double-page__label product-item__label--on-offer">В наличии</div>
+            <form action="#" class="double-page__body cart-form" name="cart-form" id="cart-form">
+              <div class="double-page__main cart-form__main">
+                <div class="cart-form__item cart-item">
+                  <label class="cart-item__item cart-item__check checkbox">
+                    <input class="checkbox__input" type="checkbox" aria-label="Выбрать товар" checked>
+                    <span class="checkbox__box"></span>
+                  </label>
+                  <a href="#" class="cart-item__item cart-item__img-block" aria-label="Страница товара">
+                    <img src="assets/img/content/temp/cart/item.webp" alt="">
+                  </a>
+                  <div class="cart-item__item cart-item__name">Товар:</div>
+                  <a href="#" class="cart-item__item cart-item__title">Боди без рукавов "ФРУК-ТИК", розовый</a>
+                  <div class="cart-item__item cart-item__info">
+                    <div class="cart-item__info-discounts">Скидка: 20%</div>
+                    <div class="cart-item__info-size">Размер: 74</div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">Цена:</div>
+                  <div class="cart-item__item cart-item__actual-price">349₽</div>
+                  <div class="cart-item__item cart-item__last-price">500₽</div>
+                  <div class="cart-item__item cart-item__name">Колл-во:</div>
+                  <div class="cart-item__item cart-item__item-quantity">
+                    <div class="cart-item__num-input num-input">
+                      <button type="button" class="num-input-btn-up" aria-label="Увеличить">+</button>
+                      <button type="button" class="num-input-btn-down" aria-label="Уменьшить">-</button>
+                      <input type="number" class="num-input-area" aria-label="Текущее количество" min="1" max="100" value="1">
+                    </div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">В сумме:</div>
+                  <div class="cart-item__item cart-item__total-price">2 332₽</div>
+                  <div class="cart-item__item cart-item__last-total-price">3 312₽</div>
+                  <div class="cart-item__item cart-item__price-info">Экономия 1 370 ₽</div>
+                  <div class="cart-item__item">
+                    <button type="button" class="cart-item__close" aria-label="Удалить товар">
+                      <svg>
+                        <use xlink:href="assets/img/icons/icons.svg#cart"></use>
+                      </svg>
+                      <span>Удалить</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart-form__item cart-item">
+                  <label class="cart-item__item cart-item__check checkbox">
+                    <input class="checkbox__input" type="checkbox" aria-label="Выбрать товар" checked>
+                    <span class="checkbox__box"></span>
+                  </label>
+                  <a href="#" class="cart-item__item cart-item__img-block" aria-label="Страница товара">
+                    <img src="assets/img/content/temp/cart/item.webp" alt="">
+                  </a>
+                  <div class="cart-item__item cart-item__name">Товар:</div>
+                  <a href="#" class="cart-item__item cart-item__title">Боди без рукавов "ФРУК-ТИК", розовый</a>
+                  <div class="cart-item__item cart-item__info">
+                    <div class="cart-item__info-discounts">Скидка: 20%</div>
+                    <div class="cart-item__info-size">Размер: 74</div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">Цена:</div>
+                  <div class="cart-item__item cart-item__actual-price">349₽</div>
+                  <div class="cart-item__item cart-item__last-price">500₽</div>
+                  <div class="cart-item__item cart-item__name">Колл-во:</div>
+                  <div class="cart-item__item cart-item__item-quantity">
+                    <div class="cart-item__num-input num-input">
+                      <button type="button" class="num-input-btn-up" aria-label="Увеличить">+</button>
+                      <button type="button" class="num-input-btn-down" aria-label="Уменьшить">-</button>
+                      <input type="number" class="num-input-area" aria-label="Текущее количество" min="1" max="100" value="1">
+                    </div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">В сумме:</div>
+                  <div class="cart-item__item cart-item__total-price">2 332₽</div>
+                  <div class="cart-item__item cart-item__last-total-price">3 312₽</div>
+                  <div class="cart-item__item cart-item__price-info">Экономия 1 370 ₽</div>
+                  <div class="cart-item__item">
+                    <button type="button" class="cart-item__close" aria-label="Удалить товар">
+                      <svg>
+                        <use xlink:href="assets/img/icons/icons.svg#cart"></use>
+                      </svg>
+                      <span>Удалить</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart-form__item cart-item">
+                  <label class="cart-item__item cart-item__check checkbox">
+                    <input class="checkbox__input" type="checkbox" aria-label="Выбрать товар" checked>
+                    <span class="checkbox__box"></span>
+                  </label>
+                  <a href="#" class="cart-item__item cart-item__img-block" aria-label="Страница товара">
+                    <img src="assets/img/content/temp/cart/item.webp" alt="">
+                  </a>
+                  <div class="cart-item__item cart-item__name">Товар:</div>
+                  <a href="#" class="cart-item__item cart-item__title">Боди без рукавов "ФРУК-ТИК", розовый</a>
+                  <div class="cart-item__item cart-item__info">
+                    <div class="cart-item__info-discounts">Скидка: 20%</div>
+                    <div class="cart-item__info-size">Размер: 74</div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">Цена:</div>
+                  <div class="cart-item__item cart-item__actual-price">349₽</div>
+                  <div class="cart-item__item cart-item__last-price">500₽</div>
+                  <div class="cart-item__item cart-item__name">Колл-во:</div>
+                  <div class="cart-item__item cart-item__item-quantity">
+                    <div class="cart-item__num-input num-input">
+                      <button type="button" class="num-input-btn-up" aria-label="Увеличить">+</button>
+                      <button type="button" class="num-input-btn-down" aria-label="Уменьшить">-</button>
+                      <input type="number" class="num-input-area" aria-label="Текущее количество" min="1" max="100" value="1">
+                    </div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">В сумме:</div>
+                  <div class="cart-item__item cart-item__total-price">2 332₽</div>
+                  <div class="cart-item__item cart-item__last-total-price">3 312₽</div>
+                  <div class="cart-item__item cart-item__price-info">Экономия 1 370 ₽</div>
+                  <div class="cart-item__item">
+                    <button type="button" class="cart-item__close" aria-label="Удалить товар">
+                      <svg>
+                        <use xlink:href="assets/img/icons/icons.svg#cart"></use>
+                      </svg>
+                      <span>Удалить</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart-form__item cart-item">
+                  <label class="cart-item__item cart-item__check checkbox">
+                    <input class="checkbox__input" type="checkbox" aria-label="Выбрать товар" checked>
+                    <span class="checkbox__box"></span>
+                  </label>
+                  <a href="#" class="cart-item__item cart-item__img-block" aria-label="Страница товара">
+                    <img src="assets/img/content/temp/cart/item.webp" alt="">
+                  </a>
+                  <div class="cart-item__item cart-item__name">Товар:</div>
+                  <a href="#" class="cart-item__item cart-item__title">Боди без рукавов "ФРУК-ТИК", розовый</a>
+                  <div class="cart-item__item cart-item__info">
+                    <div class="cart-item__info-discounts">Скидка: 20%</div>
+                    <div class="cart-item__info-size">Размер: 74</div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">Цена:</div>
+                  <div class="cart-item__item cart-item__actual-price">349₽</div>
+                  <div class="cart-item__item cart-item__last-price">500₽</div>
+                  <div class="cart-item__item cart-item__name">Колл-во:</div>
+                  <div class="cart-item__item cart-item__item-quantity">
+                    <div class="cart-item__num-input num-input">
+                      <button type="button" class="num-input-btn-up" aria-label="Увеличить">+</button>
+                      <button type="button" class="num-input-btn-down" aria-label="Уменьшить">-</button>
+                      <input type="number" class="num-input-area" aria-label="Текущее количество" min="1" max="100" value="1">
+                    </div>
+                  </div>
+                  <div class="cart-item__item cart-item__name">В сумме:</div>
+                  <div class="cart-item__item cart-item__total-price">2 332₽</div>
+                  <div class="cart-item__item cart-item__last-total-price">3 312₽</div>
+                  <div class="cart-item__item cart-item__price-info">Экономия 1 370 ₽</div>
+                  <div class="cart-item__item">
+                    <button type="button" class="cart-item__close" aria-label="Удалить товар">
+                      <svg>
+                        <use xlink:href="assets/img/icons/icons.svg#cart"></use>
+                      </svg>
+                      <span>Удалить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="double-page__sidebar cart-form__total">
+                <div class="cart-form__title-block">
+                  <div class="cart-form__title">
+                    Итого:
+                  </div>
+                  <button type="button" class="cart-form__share" aria-label="Поделиться в социальных сетях">
+                    <svg>
+                      <use xlink:href="assets/img/icons/icons.svg#share"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="cart-form__weight">Общий вес корзины: 5кг</div>
+                <div class="cart-form__descr">Экономия 2 370 ₽</div>
+                <div class="cart-form__total-price">К оплате: 4 664₽</div>
+                <button type="button" class="cart-form__enter-promo">
+                  <span>Ввести промокод</span>
+                  <svg>
+                    <use xlink:href="assets/img/icons/icons.svg#arrow-btn"></use>
+                  </svg>
+                </button>
+                <div class="cart-form__footer-btns">
+                  <a href="#" class="cart-form__link main-btn">оформить заказ</a>
+                  <button type="button" class="cart-form__quick-order main-btn js-open-popup-btn" data-popup-name="quick-order">быстрый заказ</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="recommended section--margin ">
-      <div class="container">
-        <div class="recommended__inner">
-          <h4 class="recommended__title main-title">
-            Ранее вы смотрели
-          </h4>
-          <ul class="recommended__list">
-            <li class="recommended__item product-item">
+      </section>
+  
+      <section class="recommended recommended--white-bg section--margin ">
+        <div class="container">
+          <div class="recommended__inner">
+            <h2 class="recommended__title main-title">
+              Ранее вы смотрели
+            </h2>
+            <ul class="recommended__list">
+              <li class="recommended__item product-item">
   <a href="#" class="product-item__img-wrapper">
     <img src="assets/img/content//temp/product-item/product-item-1.webp" class="product-item__img"
       alt='Боди без рукавов "ФРУК-ТИК", розовый'>
@@ -393,7 +561,7 @@
     купить в 1 клик
   </button>
 </li>
-            <li class="recommended__item product-item">
+              <li class="recommended__item product-item">
   <a href="#" class="product-item__img-wrapper">
     <img src="assets/img/content//temp/product-item/product-item-2.webp" class="product-item__img"
       alt='Боди без рукавов "ФРУК-ТИК", розовый'>
@@ -410,7 +578,7 @@
     купить в 1 клик
   </button>
 </li>
-            <li class="recommended__item product-item">
+              <li class="recommended__item product-item">
   <a href="#" class="product-item__img-wrapper">
     <img src="assets/img/content//temp/product-item/product-item-3.webp" class="product-item__img"
       alt='Боди без рукавов "ФРУК-ТИК", розовый'>
@@ -427,7 +595,7 @@
     купить в 1 клик
   </button>
 </li>
-            <li class="recommended__item product-item">
+              <li class="recommended__item product-item">
   <a href="#" class="product-item__img-wrapper">
     <img src="assets/img/content//temp/product-item/product-item-4.webp" class="product-item__img"
       alt='Боди без рукавов "ФРУК-ТИК", розовый'>
@@ -444,7 +612,7 @@
     купить в 1 клик
   </button>
 </li>
-            <li class="recommended__item recommended__item--mobile-hidden product-item">
+              <li class="recommended__item recommended__item--mobile-hidden product-item">
   <a href="#" class="product-item__img-wrapper">
     <img src="assets/img/content//temp/product-item/product-item-5.webp" class="product-item__img"
       alt='Боди без рукавов "ФРУК-ТИК", розовый'>
@@ -461,7 +629,7 @@
     купить в 1 клик
   </button>
 </li>
-            <li class="recommended__item recommended__item--mobile-hidden product-item">
+              <li class="recommended__item recommended__item--mobile-hidden product-item">
   <a href="#" class="product-item__img-wrapper">
     <img src="assets/img/content//temp/product-item/product-item-6.webp" class="product-item__img"
       alt='Боди без рукавов "ФРУК-ТИК", розовый'>
@@ -478,143 +646,16 @@
     купить в 1 клик
   </button>
 </li>
-          </ul>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <section class="subscription section--margin">
-      <div class="container">
-        <div class="subscription__inner">
-          <h3 class="subscription__title main-title">
-            Нужна консультация?
-          </h3>
-          <p class="subscription__descr">
-            Наши специалисты ответят на любой интересующий вопрос
-          </p>
-          <a href="#" class="subscription__btn main-btn">
-            Задать вопрос
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="recommended section--margin">
-      <div class="container">
-        <div class="recommended__inner">
-          <h4 class="recommended__title main-title">
-            Ранее вы смотрели
-          </h4>
-          <ul class="recommended__list">
-            <li class="recommended__item product-item">
-  <a href="#" class="product-item__img-wrapper">
-    <img src="assets/img/content//temp/product-item/product-item-1.webp" class="product-item__img"
-      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
-    <div class="product-item__label product-item__label--on-offer">В наличии</div>
-  </a>
-  <a href="#" class="product-item__name">
-    Боди без рукавов "ФРУК-ТИК", розовый
-  </a>
-  <span class="product-item__price">
-    349 ₽/шт
-    <span>₽/шт</span>
-  </span>
-  <button type="button" class="product-item__btn main-btn">
-    купить в 1 клик
-  </button>
-</li>
-            <li class="recommended__item product-item">
-  <a href="#" class="product-item__img-wrapper">
-    <img src="assets/img/content//temp/product-item/product-item-2.webp" class="product-item__img"
-      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
-    <div class="product-item__label product-item__label--on-offer">В наличии</div>
-  </a>
-  <a href="#" class="product-item__name">
-    Боди без рукавов "ФРУК-ТИК", розовый
-  </a>
-  <span class="product-item__price">
-    349 ₽/шт
-    <span>₽/шт</span>
-  </span>
-  <button type="button" class="product-item__btn main-btn">
-    купить в 1 клик
-  </button>
-</li>
-            <li class="recommended__item product-item">
-  <a href="#" class="product-item__img-wrapper">
-    <img src="assets/img/content//temp/product-item/product-item-3.webp" class="product-item__img"
-      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
-    <div class="product-item__label product-item__label--on-offer">В наличии</div>
-  </a>
-  <a href="#" class="product-item__name">
-    Боди без рукавов "ФРУК-ТИК", розовый
-  </a>
-  <span class="product-item__price">
-    349 ₽/шт
-    <span>₽/шт</span>
-  </span>
-  <button type="button" class="product-item__btn main-btn">
-    купить в 1 клик
-  </button>
-</li>
-            <li class="recommended__item product-item">
-  <a href="#" class="product-item__img-wrapper">
-    <img src="assets/img/content//temp/product-item/product-item-4.webp" class="product-item__img"
-      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
-    <div class="product-item__label product-item__label--not-available">Нет в наличии</div>
-  </a>
-  <a href="#" class="product-item__name">
-    Боди без рукавов "ФРУК-ТИК", розовый
-  </a>
-  <span class="product-item__price">
-    349 ₽/шт
-    <span>₽/шт</span>
-  </span>
-  <button type="button" class="product-item__btn main-btn">
-    купить в 1 клик
-  </button>
-</li>
-            <li class="recommended__item recommended__item--mobile-hidden product-item">
-  <a href="#" class="product-item__img-wrapper">
-    <img src="assets/img/content//temp/product-item/product-item-5.webp" class="product-item__img"
-      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
-    <div class="product-item__label product-item__label--in-stock">На складе</div>
-  </a>
-  <a href="#" class="product-item__name">
-    Боди без рукавов "ФРУК-ТИК", розовый
-  </a>
-  <span class="product-item__price">
-    349 ₽/шт
-    <span>₽/шт</span>
-  </span>
-  <button type="button" class="product-item__btn main-btn">
-    купить в 1 клик
-  </button>
-</li>
-            <li class="recommended__item recommended__item--mobile-hidden product-item">
-  <a href="#" class="product-item__img-wrapper">
-    <img src="assets/img/content//temp/product-item/product-item-6.webp" class="product-item__img"
-      alt='Боди без рукавов "ФРУК-ТИК", розовый'>
-    <div class="product-item__label product-item__label--on-offer">В наличии</div>
-  </a>
-  <a href="#" class="product-item__name">
-    Боди без рукавов "ФРУК-ТИК", розовый
-  </a>
-  <span class="product-item__price">
-    349 ₽/шт
-    <span>₽/шт</span>
-  </span>
-  <button type="button" class="product-item__btn main-btn">
-    купить в 1 клик
-  </button>
-</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <footer class="footer">
+      </section>
+  
+    </main>
+  
+  
+    
+    <footer class="footer">
   <div class="container">
     <div class="footer__inner">
       <div class="footer__column footer__column--tablet">
@@ -845,8 +886,60 @@
     </div>
   </div>
 </div>
-
-  <script src="assets/js-min/main.min.js?_v=20240222195559"></script>
-</body>
-
-</html>
+  
+    <div class="popup js-popup quick-order _active">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="quick-order__body">
+          <h2 class="quick-order__title main-title">
+            Купить в 1 клик
+          </h2>
+          <div class="quick-order__form">
+            <fieldset>
+              <legend class="quick-order__legend section-title">Введите данные для заказа</legend>
+              <div class="quick-order__input-block input-block">
+                <label class="input-block__label" for="quick-order-name">Ф.И.О. *</label>
+                <input class="input-block__input input" type="text" id="quick-order-name" form="cart-form" name="name" autocomplete="on"
+                  required>
+              </div>
+              <div class="quick-order__input-block input-block">
+                <label class="input-block__label" for="quick-order-phone">Телефон *</label>
+                <input class="input-block__input input" type="tel" id="quick-order-phone" form="cart-form" name="phone" autocomplete="on"
+                  required>
+              </div>
+              <div class="quick-order__input-block input-block">
+                <label class="input-block__label" for="quick-order-mail">E-Mail</label>
+                <input class="input-block__input input" type="email" id="quick-order-mail" form="cart-form" name="mail"
+                  autocomplete="on">
+              </div>
+              <div class="quick-order__input-block input-block">
+                <label class="input-block__label" for="quick-order-comments">Комментарий к заказу</label>
+                <input class="input-block__input input" type="text" id="quick-order-comments" form="cart-form" name="comments">
+              </div>
+              <label class="quick-order__input checkbox">
+                <input class="checkbox__input" type="checkbox" form="cart-form" name="agreement" required>
+                <span class="checkbox__box"></span>
+                <span class="checkbox__name">Я согласен на обработку персональных данных</span>
+              </label>
+              <div class="quick-order__info">
+                <svg>
+                  <use xlink:href="assets/img/icons/icons.svg#car"></use>
+                </svg>
+                <span class="quick-order__info-text">В стоимость заказа может быть включена <a href="#"
+                    class="quick-order__info-link">цена доставки</a></span>
+              </div>
+              <button type="submit" class="quick-order__submit main-btn" form="cart-form">оформить заказ</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <script src="assets/js-min/main.min.js?_v=20240222195559"></script>
+  </body>
+  
+  </html>

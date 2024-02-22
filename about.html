@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>О компании</title>
-  <link rel="stylesheet" href="assets/css-min/style.min.css">
+  <link rel="stylesheet" href="assets/css-min/style.min.css?_v=20240222195559">
   
 </head>
 
@@ -372,7 +372,7 @@
       </div>
       <div class="about-page__body">
         <div class="about-page__body-inner">
-          <div class="about-page__body-item tabs__body ab-company _active">
+          <div class="about-page__body-item tabs__body tabs__item ab-company _active">
             <div class="container">
               <div class="ab-company__inner">
                 <p>
@@ -541,7 +541,7 @@
               </div>
             </div>
           </div>
-          <div class="about-page__body-item tabs__body ab-payment">
+          <div class="about-page__body-item tabs__body tabs__item ab-payment">
             <div class="container">
               <div class="ab-payment__inner">
                 <h2>Условия оплаты и возврата</h2>
@@ -735,7 +735,7 @@
               </div>
             </div>
           </div>
-          <div class="about-page__body-item tabs__body ab-delivery">
+          <div class="about-page__body-item tabs__body tabs__item ab-delivery">
             <div class="container">
               <div class="ab-delivery__inner">
                 <h2>
@@ -985,7 +985,7 @@
               </div>
             </div>
           </div>
-          <div class="about-page__body-item tabs__body ab-buy">
+          <div class="about-page__body-item tabs__body tabs__item ab-buy">
             <div class="container">
               <div class="ab-buy__inner">
                 <h2>Как оформить заказ</h2>
@@ -1033,7 +1033,7 @@
               </div>
             </div>
           </div>
-          <div class="about-page__body-item tabs__body ab-news">
+          <div class="about-page__body-item tabs__body tabs__item ab-news">
             <div class="container">
               <div class="ab-news__inner">
                 <h2>Новости</h2>
@@ -1130,7 +1130,7 @@
               </div>
             </div>
           </div>
-          <div class="about-page__body-item tabs__body ab-reviews">
+          <div class="about-page__body-item tabs__body tabs__item ab-reviews">
             <div class="container">
               <div class="ab-reviews__inner">
                 <div class="ab-reviews__body reviews">
@@ -1231,7 +1231,7 @@
               </div>
             </div>
           </div>
-          <div class="about-page__body-item tabs__body ab-contacts">
+          <div class="about-page__body-item tabs__body tabs__item ab-contacts">
             <div class="ab-contacts__inner">
               <section class="map">
                 <div class="container">
@@ -1276,14 +1276,14 @@
                         наличие
                         товаров.
                       </p>
-                      <button type="button" class="map__btn main-btn">Написать нам</button>
+                      <button type="button" class="map__btn main-btn js-open-popup-btn" data-popup-name="question">Написать нам</button>
                     </div>
                   </div>
                 </div>
               </section>
             </div>
           </div>
-          <div class="about-page__body-item tabs__body ab-licenses">
+          <div class="about-page__body-item tabs__body tabs__item ab-licenses">
             <div class="container">
               <div class="ab-licenses__inner">
                 <section class="ab-licenses__item licenses-item">
@@ -1478,7 +1478,7 @@
   </div>
 </footer>
 
-<div class="popup js-popup registration" data-popup-name="registration">
+<div class="popup js-popup registration @@regactive" data-popup-name="registration">
   <div class="popup__table" role="complementary">
     <div class="popup__table-cell js-popup-area">
       <div class="popup__window">
@@ -1497,32 +1497,38 @@
             <form action="#" class="registration__form registration-form" name="registration" id="registration">
               <div class="registration-form__input-block input-block">
                 <label class="input-block__label" for="registration__name">Фамилия Имя Отчество *</label>
-                <input class="input-block__input input" type="text" id="registration__name" name="name" placeholder="Иванов Иван Иванович" autocomplete="on" required>
+                <input class="input-block__input input" type="text" id="registration__name" name="name"
+                  placeholder="Иванов Иван Иванович" autocomplete="on" required>
               </div>
               <div class="registration-form__row">
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-mail">E-mail *</label>
-                  <input class="input-block__input input" type="email" id="registration-mail" name="mail" placeholder="ivanov@gmail.com" autocomplete="on" required>
+                  <input class="input-block__input input" type="email" id="registration-mail" name="mail"
+                    placeholder="ivanov@gmail.com" autocomplete="on" required>
                 </div>
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-phone">Телефон</label>
-                  <input class="input-block__input input" type="tel" id="registration-phone" name="phone" placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on">
+                  <input class="input-block__input input" type="tel" id="registration-phone" name="phone"
+                    placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on">
                 </div>
               </div>
               <div class="registration-form__row">
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-pass">Пароль *</label>
-                  <input class="input-block__input input" type="password" id="registration-pass" name="pass" placeholder="******" required>
+                  <input class="input-block__input input" type="password" id="registration-pass" name="pass"
+                    placeholder="******" required>
                 </div>
                 <div class="registration-form__input-block input-block">
                   <label class="input-block__label" for="registration-pass-confirm">Подтверждение пароля *</label>
-                  <input class="input-block__input input" type="password" id="registration-pass-confirm" name="pass-confirm" placeholder="******" required>
+                  <input class="input-block__input input" type="password" id="registration-pass-confirm"
+                    name="pass-confirm" placeholder="******" required>
                 </div>
               </div>
               <div class="registration-form__row">
                 <div class="registration-form__input-block registration-form__input-captcha input-block">
                   <label class="input-block__label" for="registration-captcha">Введите код *</label>
-                  <input class="input-block__input input" type="text" id="registration-captcha" name="captcha" placeholder="XXXXXX" required>
+                  <input class="input-block__input input" type="text" id="registration-captcha" name="captcha"
+                    placeholder="XXXXXX" required>
                 </div>
                 <div class="registration-form__captcha">
                   капча
@@ -1530,7 +1536,8 @@
               </div>
               <div class="registration-form__btns">
                 <button type="submit" class="registration-form__submit main-btn">зарегистрироваться</button>
-                <button type="button" class="registration-form__btn js-open-popup-btn" data-popup-name="enter">Есть аккаунт?</button>
+                <button type="button" class="registration-form__btn js-open-popup-btn" data-popup-name="enter">Есть
+                  аккаунт?</button>
                 <label class="registration-form__input checkbox">
                   <input class="checkbox__input" type="checkbox" name="agreement" required>
                   <span class="checkbox__box"></span>
@@ -1544,7 +1551,7 @@
     </div>
   </div>
 </div>
-<div class="popup js-popup enter" data-popup-name="enter">
+<div class="popup js-popup enter @@enteractive" data-popup-name="enter">
   <div class="popup__table" role="complementary">
     <div class="popup__table-cell js-popup-area">
       <div class="popup__window">
@@ -1584,9 +1591,46 @@
   </div>
 </div>
 
+  <div class="popup js-popup question @@active" data-popup-name="question">
+  <div class="popup__table" role="complementary">
+    <div class="popup__table-cell js-popup-area">
+      <div class="popup__window">
+        <button class="popup__close js-popup-close"></button>
+        <div class="question__body">
+          <h2 class="question__title main-title">
+            Задать вопрос
+          </h2>
+          <form action="#" class="question__form question-form" name="question" id="question">
+            <div class="question-form__input-block input-block">
+              <label class="input-block__label" for="question__name">Ваше имя*</label>
+              <input class="input-block__input input" type="text" id="question__name" name="name"
+                placeholder="Иванов Иван Иванович" autocomplete="on" required>
+            </div>
+            <div class="question-form__input-block input-block">
+              <label class="input-block__label" for="question__phone">Телефон*</label>
+              <input class="input-block__input input" type="tel" id="question__phone" name="phone"
+                placeholder="+7 (xxx) xxx-xx-xx" autocomplete="on" required>
+            </div>
+            <div class="question-form__input-block input-block">
+              <label class="input-block__label" for="question__mail">E-mail*</label>
+              <input class="input-block__input input" type="email" id="question__mail" name="mail"
+                placeholder="ivanov@gmail.com" autocomplete="on" required>
+            </div>
+            <div class="question-form__input-block input-block">
+              <label class="input-block__label" for="question__mail">Вопрос *</label>
+              <textarea class="input-block__textarea" name="text" id="question-textarea" required></textarea>
+            </div>
+            <button type="submit" class="question-form__submit main-btn">сохранить изменения</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
       ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });</script>
-  <script src="assets/js-min/main.min.js"></script>
+  <script src="assets/js-min/main.min.js?_v=20240222195559"></script>
 </body>
 
 </html>
